@@ -49,19 +49,19 @@ const toggleMob = () => {
   nav_wrapper.classList.toggle("mob_menu");
 };
 
-const menu = document.querySelector(".nav_wrapper");
-const targetBlock = document.querySelector(".advantages");
+// const menu = document.querySelector(".nav_wrapper");
+// const targetBlock = document.querySelector(".advantages");
 
-window.addEventListener("scroll", function () {
-  const scrollPosition = window.scrollY;
+// window.addEventListener("scroll", function () {
+//   const scrollPosition = window.scrollY;
 
-  if (scrollPosition >= targetBlock.offsetTop) {
+//   if (scrollPosition >= targetBlock.offsetTop) {
 
-    menu.classList.add("active_white_menu");
-  } else {
-    menu.classList.remove("active_white_menu");
-  }
-});
+//     menu.classList.add("active_white_menu");
+//   } else {
+//     menu.classList.remove("active_white_menu");
+//   }
+// });
 
 // cursor grab
 let isMouseDown = false;
