@@ -858,10 +858,7 @@ footer span {
   display: none;
 }
 
-.nav_logo {
-  position: relative;
-  z-index: 120;
-}
+
 
 .mob_menu .nav_mob_menu {
   display: block;
@@ -975,8 +972,10 @@ footer span {
   .nav_menu {
     margin-top: 70%;
   }
-  .nav_wrapper {
-    padding: 32px 24px;
+  .mob_menu_nav_logo {
+    position: relative;
+    left: 24px;
+    top: 32px;
   }
   .header_question {
     right: 24px;
@@ -1039,6 +1038,9 @@ footer span {
   .advantage_text_wrapper {
     width: 100%;
   }
+  .active_white_menu p {
+    color: #fff;
+}
   .advantage_text {
     padding: 16px 24px;
   }
