@@ -1,15 +1,17 @@
 header {
   width: 100%;
-  height: 1080px;
+  height: 100vh;
   background: url(../assets/images/header-bg.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
+  background-attachment: fixed;
 }
 
 nav {
   width: 100%;
+  height: 112px;
 }
 .nav_wrapper {
   width: 100%;
@@ -18,8 +20,16 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  position: fixed;
+  z-index: 111;
 }
-
+button {
+  transition: all 0.4s ease;
+}
+button:hover {
+  opacity: 0.8;
+  transition: all 0.4s ease;
+}
 .nav_wrapper_left,
 .nav_auth_btns {
   display: flex;
@@ -39,8 +49,12 @@ nav {
   font-weight: 492;
   line-height: 140%;
   opacity: 0.8;
+  transition: all 0.4s ease;
 }
-
+.nav_menu_item p:hover {
+  opacity: 0.5;
+  transition: all 0.4s ease;
+}
 .nav_button {
   border-radius: 32px;
   background: #2420fc;
@@ -141,14 +155,21 @@ nav {
 }
 
 .header_question {
+  position: fixed;
   padding: 12px;
   width: 48px;
   height: 48px;
+  right: 36px;
+  bottom: 36px;
   border-radius: 24px;
   background: var(--Second, #111112);
   cursor: pointer;
+  transition: all 0.4s ease;
 }
-
+.header_question:hover {
+  opacity: 0.8;
+  transition: all 0.4s ease;
+}
 .header_question p {
   color: var(--OnSecond, #fff);
   text-align: center;
@@ -171,6 +192,7 @@ section {
   margin: 0 auto;
 }
 .advantages {
+  border-radius: 60px 60px 0px 0px;
   background: #fff;
 }
 .block_name h3 {
@@ -353,25 +375,152 @@ section {
   margin-bottom: 48px;
 }
 
-.range {
+/* .range {
   width: 100%;
-  height: 15px;
+  height: 4px;
   appearance: none;
-  background: #edf1f4;
+  background: #CAC6E4;
   outline: none;
   border-radius: 15px;
+
+} */
+
+/* .range::-webkit-slider-thumb {
+  appearance: none;
+  width: 24px !important;
+  height: 24px !important;
+  background: #2420FC;
+  border-radius: 50%;
+  border: 2px solid #2420FC;
+  box-shadow: -107px 0 0 100px #2420FC;
+  cursor: pointer;
+} */
+/*  */
+
+input[type="range"] {
+  color: #2420fc;
+  --thumb-height: 24px;
+  --track-height: 4px;
+  --track-color: #cac6e4;
+  --brightness-hover: 180%;
+  --brightness-down: 80%;
+  --clip-edges: 0.125em;
+}
+
+@media (prefers-color-scheme: dark) {
+  input[type="range"] {
+    color: #2420fc;
+    --track-color: #cac6e4;
+  }
+
+  input[type="range"].win10-thumb {
+    color: #3a86ff;
+  }
+}
+
+/* === range commons === */
+input[type="range"] {
+  position: relative;
+  background: #fff0;
   overflow: hidden;
 }
 
-.range::-webkit-slider-thumb {
+input[type="range"]:active {
+  cursor: grabbing;
+}
+
+/* === WebKit specific styles === */
+input[type="range"],
+input[type="range"]::-webkit-slider-runnable-track,
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  transition: all ease 100ms;
+  height: var(--thumb-height);
+  width: 100%;
+}
+
+input[type="range"]::-webkit-slider-runnable-track,
+input[type="range"]::-webkit-slider-thumb {
+  position: relative;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  --thumb-radius: calc((var(--thumb-height) * 0.5) - 1px);
+  --clip-top: calc((var(--thumb-height) - var(--track-height)) * 0.5 - 0.5px);
+  --clip-bottom: calc(var(--thumb-height) - var(--clip-top));
+  --clip-further: calc(100% + 1px);
+  --box-fill: calc(-100vmax - var(--thumb-width, var(--thumb-height))) 0 0
+    100vmax currentColor;
+
+  width: var(--thumb-width, var(--thumb-height));
+  background: linear-gradient(currentColor 0 0) scroll no-repeat left center /
+    50% calc(var(--track-height) + 1px);
+  background-color: currentColor;
+  box-shadow: var(--box-fill);
+  border-radius: var(--thumb-width, var(--thumb-height));
+
+  filter: brightness(100%);
+  clip-path: polygon(
+    100% -1px,
+    var(--clip-edges) -1px,
+    0 var(--clip-top),
+    -100vmax var(--clip-top),
+    -100vmax var(--clip-bottom),
+    0 var(--clip-bottom),
+    var(--clip-edges) 100%,
+    var(--clip-further) var(--clip-further)
+  );
+}
+
+input[type="range"]:hover::-webkit-slider-thumb {
+  filter: brightness(var(--brightness-hover));
+  cursor: grab;
+}
+
+input[type="range"]:active::-webkit-slider-thumb {
+  filter: brightness(var(--brightness-down));
+  cursor: grabbing;
+}
+
+input[type="range"]::-webkit-slider-runnable-track {
+  background: linear-gradient(var(--track-color) 0 0) scroll no-repeat center /
+    100% calc(var(--track-height) + 1px);
+}
+
+input[type="range"]:active::-moz-range-thumb {
+  cursor: grabbing;
+}
+
+input[type="range"]::-moz-range-track {
+  width: 100%;
+  background: var(--track-color);
+}
+
+input[type="range"]::-moz-range-progress {
   appearance: none;
-  width: 15px;
-  height: 15px;
-  background: #fff;
-  border-radius: 50%;
-  border: 2px solid #022f52;
-  box-shadow: -407px 0 0 400px #022f52;
-  cursor: pointer;
+  background: currentColor;
+  transition-delay: 30ms;
+}
+
+input[type="range"]::-moz-range-track,
+input[type="range"]::-moz-range-progress {
+  height: calc(var(--track-height) + 1px);
+  border-radius: var(--track-height);
+}
+
+input[type="range"]::-moz-range-thumb,
+input[type="range"]::-moz-range-progress {
+  filter: brightness(100%);
+}
+
+input[type="range"]:hover::-moz-range-thumb,
+input[type="range"]:hover::-moz-range-progress {
+  filter: brightness(var(--brightness-hover));
+}
+
+input[type="range"]:active::-moz-range-thumb,
+input[type="range"]:active::-moz-range-progress {
+  filter: brightness(var(--brightness-down));
 }
 
 .profit_calc_summ h3 {
@@ -507,10 +656,23 @@ section {
 }
 .road_list {
   margin-top: 54px;
-  display: flex;
-  align-items: flex-end;
+  width: 1200px;
   position: absolute;
   left: 0;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+.road_list::-webkit-scrollbar {
+  display: none; /* Скрывает ползунок в Chrome и Safari */
+}
+
+.road_list {
+  scrollbar-width: none; /* Скрывает ползунок в Firefox */
+}
+.road_list_wrapper {
+  display: flex;
+  align-items: flex-end;
+  width: 2050px;
 }
 .road_list_step {
   width: 224px;
@@ -546,8 +708,12 @@ section {
   justify-content: center;
   position: relative;
   z-index: 11;
+  transition: all 0.4s ease;
 }
-
+.start_now:hover {
+  opacity: 0.5;
+  transition: all 0.4s ease;
+}
 .start_now p {
   color: var(--First, #fff);
   font-family: TTInterfaces500;
@@ -563,6 +729,7 @@ section {
   display: flex;
   align-items: start;
   gap: 24px;
+  width: 2200px;
 }
 
 .road_description {
@@ -575,6 +742,9 @@ section {
 }
 .road_description:nth-child(3) {
   width: 200px;
+}
+.road_description:nth-child(4) {
+  width: 900px;
 }
 .road_description p {
   color: var(--OnBg, #111112);
@@ -610,7 +780,12 @@ section {
   font-weight: 820;
   line-height: 24px; /* 141.176% */
 }
-
+.ui-active {
+  border-bottom: none;
+}
+.accordion-panel {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
 .ui-active svg {
   transform: rotate(45deg);
   transition: all 0.4s ease;
@@ -661,12 +836,49 @@ footer span {
   display: none;
 }
 
-@media only screen and (max-width: 1512px) {
-  header {
-    height: 982px;
-  }
+.nav_logo {
+  position: relative;
+  z-index: 120;
 }
 
+.mob_menu .nav_mob_menu {
+  display: block;
+  transform: translate(0);
+  transition: all 0.4s ease;
+}
+.nav_mob_menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 111;
+  width: 100%;
+  height: 100vh;
+  background: #000;
+  transition: all 0.4s ease;
+
+  transform: translate(100%);
+}
+.exit_mob_menu {
+  cursor: pointer;
+  position: absolute;
+  right: 24px;
+  top: 32px;
+}
+
+.nav_mob_menu .nav_auth_btns {
+  display: flex !important;
+  flex-direction: column;
+  z-index: 111;
+  position: absolute;
+  bottom: 32px;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 24px;
+  padding: 0 24px;
+}
 @media only screen and (max-width: 1080px) {
   .main_content_wrapper {
     width: 100%;
@@ -677,6 +889,24 @@ footer span {
   }
 }
 @media only screen and (max-width: 750px) {
+  .nav_auth_btns .nav_button {
+    padding: 11px 20px;
+    width: 100%;
+  }
+  .nav_menu {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column !important;
+    margin-top: 50%;
+    gap: 24px;
+  }
+  .nav_menu p {
+    font-size: 52px;
+    font-style: normal;
+    font-weight: 820;
+    line-height: 56px; /* 107.692% */
+    letter-spacing: -0.52px;
+  }
   .nav_wrapper_left .nav_menu,
   .nav_auth_btns {
     display: none;
@@ -709,14 +939,25 @@ footer span {
   .how_to_connect_title .block_title {
     width: 40%;
   }
+  .road_descriptions {
+    width: 2550px;
+  }
 }
 
 @media only screen and (max-width: 500px) {
+  .nav_menu p {
+    font-size: 22px;
+    line-height: 100%;
+  }
+  .nav_menu {
+    margin-top: 70%;
+  }
   .nav_wrapper {
     padding: 32px 24px;
   }
-  header {
-    height: 90vh;
+  .header_question {
+    right: 24px;
+    bottom: 24px;
   }
   .header_content {
     margin: 0;
@@ -867,11 +1108,23 @@ footer span {
     letter-spacing: 1px;
     text-transform: uppercase;
   }
-  .block_title br, .header_content p br {
-    display: none !important; 
+  .block_title br,
+  .header_content p br {
+    display: none !important;
   }
   .header_button {
     padding: 11px 20px;
     font-size: 13px;
+  }
+  .road_descriptions {
+    width: 3000px;
+  }
+  header {
+    background: url(../assets/images/header-bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: #000;
+    background-attachment: fixed;
   }
 }

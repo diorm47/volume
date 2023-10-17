@@ -27,7 +27,12 @@ document.querySelectorAll(".range_box2 input").forEach((item) => {
   });
 });
 
-
 // Tabs
 const { Tablist } = jolty;
 Tablist.initAll();
+
+// mob nav
+const nav_wrapper = document.querySelector(".nav_wrapper");
+const toggleMob = () => {
+  nav_wrapper.classList.toggle('mob_menu')
+};

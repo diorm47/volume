@@ -40,9 +40,36 @@
 
             <button class="nav_button">Начать бесплатно</button>
           </div>
-          <div class="nav_menu_btn">
-            <img src="./assets/icons/menu.svg" alt="">
+          <div class="nav_menu_btn" onclick="toggleMob()">
+            <img src="./assets/icons/menu.svg" alt="" />
           </div>
+          <div class="nav_mob_menu">
+            <img
+              onclick="toggleMob()"
+              class="exit_mob_menu"
+              src="./assets/icons/exit.svg"
+              alt=""
+            />
+            <div class="nav_menu">
+              <a href="#">
+                <div class="nav_menu_item"><p>Тарифы</p></div>
+              </a>
+              <a href="#">
+                <div class="nav_menu_item"><p>White-paper</p></div>
+              </a>
+              <a href="#">
+                <div class="nav_menu_item"><p>О нас</p></div>
+              </a>
+            </div>
+            <div class="nav_auth_btns">
+              <a href="#">
+                <div class="nav_menu_item"><p>Войти в личный кабинет</p></div>
+              </a>
+  
+              <button class="nav_button">Начать бесплатно</button>
+            </div>
+          </div>
+     
         </div>
       </nav>
       <div class="header_content">
@@ -58,7 +85,7 @@
       </div>
       <div class="header_bottom_content">
         <div class="header_bottom_left">
-          <p class="acoounts_count">ДСвободно аккаунтов<span>*</span>: 4563</p>
+          <p class="acoounts_count">Свободно аккаунтов<span>*</span>: 4563</p>
           <div class="header_line"></div>
           <p class="header_bootom_text">
             *Проект в стадии запуска. До конца 1 квартала 2024 года не сможем
@@ -287,52 +314,60 @@
           </h2>
         </div>
         <div class="road_list">
-          <div class="road_list_step">
-            <p>2023</p>
-            <p>Q4</p>
-          </div>
-          <div class="road_list_step">
-            <p>2024</p>
-            <p>Q1</p>
-          </div>
-          <div class="road_list_step road_list_step_secondary">
-            <p>Q2</p>
-          </div>
-          <div class="road_list_step road_list_step_secondary">
-            <p>Q3</p>
-          </div>
-          <div class="road_list_step road_list_step_secondary">
-            <p>Q4</p>
-          </div>
-          <div class="road_list_step">
-            <p>2025</p>
-            <p>Q1</p>
-          </div>
-          <div class="road_list_step road_list_step_secondary">
-            <p>Q2</p>
-          </div>
-          <div class="road_descriptions">
-            <div class="road_description">
-              <p>
-                &Volume находится в стадии запуска. Доступно <br />
-                полностью автоматизированное <br />
-                инвестирование.
-              </p>
+          <div class="road_list_wrapper">
+            <div class="road_list_step">
+              <p>2023</p>
+              <p>Q4</p>
             </div>
-            <div class="road_description">
-              <p>
-                Подключение к биржам: <br />
-                OKX, Huobi, KuCoin, ByBit.
-              </p>
+            <div class="road_list_step">
+              <p>2024</p>
+              <p>Q1</p>
             </div>
-            <div class="road_description">
-              <p>
-                Добавление <br />
-                режима Pro
-              </p>
+            <div class="road_list_step road_list_step_secondary">
+              <p>Q2</p>
             </div>
-            <div class="road_description">
-              <p>Тестовый запуск инструментов ИИ для фондового рынка.</p>
+            <div class="road_list_step road_list_step_secondary">
+              <p>Q3</p>
+            </div>
+            <div class="road_list_step road_list_step_secondary">
+              <p>Q4</p>
+            </div>
+            <div class="road_list_step">
+              <p>2025</p>
+              <p>Q1</p>
+            </div>
+            <div class="road_list_step road_list_step_secondary">
+              <p>Q2</p>
+            </div>
+            <div class="road_list_step road_list_step_secondary">
+              <p>Q3</p>
+            </div>
+            <div class="road_list_step road_list_step_secondary">
+              <p>Q4</p>
+            </div>
+            <div class="road_descriptions">
+              <div class="road_description">
+                <p>
+                  &Volume находится в стадии запуска. Доступно <br />
+                  полностью автоматизированное <br />
+                  инвестирование.
+                </p>
+              </div>
+              <div class="road_description">
+                <p>
+                  Подключение к биржам: <br />
+                  OKX, Huobi, KuCoin, ByBit.
+                </p>
+              </div>
+              <div class="road_description">
+                <p>
+                  Добавление <br />
+                  режима Pro
+                </p>
+              </div>
+              <div class="road_description">
+                <p>Тестовый запуск инструментов ИИ для фондового рынка.</p>
+              </div>
             </div>
           </div>
         </div>
