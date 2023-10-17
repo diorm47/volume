@@ -1,0 +1,877 @@
+header {
+  width: 100%;
+  height: 1080px;
+  background: url(../assets/images/header-bg.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+nav {
+  width: 100%;
+}
+.nav_wrapper {
+  width: 100%;
+  padding: 36px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav_wrapper_left,
+.nav_auth_btns {
+  display: flex;
+  align-items: center;
+  gap: 36px;
+}
+.nav_menu {
+  display: flex;
+  align-items: center;
+  gap: 36px;
+}
+.nav_menu_item p {
+  color: #fff;
+  font-family: TTInterfaces500;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 492;
+  line-height: 140%;
+  opacity: 0.8;
+}
+
+.nav_button {
+  border-radius: 32px;
+  background: #2420fc;
+  padding: 6px 16px;
+  color: #fff;
+  font-family: TTInterfaces500;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 492;
+  line-height: 140%;
+}
+
+.header_content {
+  padding-left: 36px;
+  margin-top: 58px;
+}
+.header_content h1 {
+  color: #fff;
+  font-family: TTInterfaces800;
+  font-size: 86px;
+  font-style: normal;
+  font-weight: 820;
+  line-height: 97%;
+  letter-spacing: -2.58px;
+  margin-bottom: 30px;
+}
+
+.header_content p {
+  margin-bottom: 32px;
+  color: #fff;
+  opacity: 0.8;
+  font-family: TTInterfaces500;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 492;
+  line-height: 110%;
+}
+
+.header_content span {
+  color: #2420fc;
+}
+.header_button {
+  border-radius: 40px;
+  background: #fff;
+  color: #111112;
+  padding: 18px 28px;
+  font-family: TTInterfaces500;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 492;
+  line-height: 140%;
+}
+
+.header_bottom_left {
+  width: 260px;
+}
+.header_line {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.2);
+  height: 1px;
+  margin: 8px 0;
+}
+
+.acoounts_count {
+  color: #fff;
+
+  font-family: IBMPlexMono500;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px; /* 141.176% */
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+.acoounts_count span {
+  color: #2420fc;
+}
+.header_bootom_text {
+  color: var(--First, #fff);
+  opacity: 0.8;
+  font-family: TTInterfaces500;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 492;
+  line-height: 16px; /* 123.077% */
+  letter-spacing: 0.13px;
+}
+
+.header_bottom_content {
+  width: 100%;
+  position: absolute;
+  bottom: 32px;
+  padding-right: 36px;
+  padding-left: 36px;
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+}
+
+.header_question {
+  padding: 12px;
+  width: 48px;
+  height: 48px;
+  border-radius: 24px;
+  background: var(--Second, #111112);
+  cursor: pointer;
+}
+
+.header_question p {
+  color: var(--OnSecond, #fff);
+  text-align: center;
+
+  font-family: IBMPlexMono500;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px; /* 141.176% */
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+section {
+  width: 100%;
+  padding: 96px;
+}
+.main_content_wrapper {
+  width: 970px;
+  margin: 0 auto;
+}
+.advantages {
+  background: #fff;
+}
+.block_name h3 {
+  color: var(--OnBg, #111112);
+  font-family: IBMPlexMono500;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px; /* 141.176% */
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 6px;
+}
+
+.block_title h2 {
+  color: var(--Second, #111112);
+
+  font-family: TTInterfaces800;
+  font-size: 52px;
+  font-style: normal;
+  font-weight: 820;
+  line-height: 56px;
+  letter-spacing: -0.52px;
+}
+.advantages h2 {
+  margin-bottom: 48px;
+}
+
+.advantages h2 span {
+  color: var(--Accent, #2420fc);
+}
+
+.advantage_card_icon {
+  border-radius: 16px;
+  background: rgba(36, 32, 252, 0.15);
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 24px;
+  box-shadow: 0px 2.76726px 2.21381px 0px rgba(36, 32, 252, 0.07),
+    0px 6.6501px 5.32008px 0px rgba(36, 32, 252, 0.05),
+    0px 12.52155px 10.01724px 0px rgba(36, 32, 252, 0.04),
+    0px 22.33631px 17.86905px 0px rgba(36, 32, 252, 0.04);
+}
+
+.advantage_card_title h4 {
+  margin-bottom: 15px;
+  color: var(--OnBg, #111112);
+  font-family: TTInterfaces800;
+  font-size: 23px;
+  font-style: normal;
+  font-weight: 820;
+  line-height: 24px; /* 104.348% */
+}
+
+.advantage_card_text p {
+  color: var(--OnBg, #111112);
+  font-family: TTInterfaces500;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 492;
+  line-height: 24px; /* 141.176% */
+}
+
+.advantage_cards {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  margin-bottom: 60px;
+}
+
+.advantage_text {
+  padding: 24px 36px;
+  border-radius: 24px;
+  border: 1px solid var(--Accent, #2420fc);
+}
+
+.advantage_text_wrapper {
+  width: 520px;
+  margin: 0 auto;
+}
+.advantage_text_wrapper h3 {
+  color: var(--OnBg, #111112);
+  font-family: TTInterfaces800;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 820;
+  line-height: 16px; /* 123.077% */
+}
+
+.advantage_text_wrapper p {
+  color: var(--OnBg, #111112);
+  font-family: TTInterfaces500;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 492;
+  line-height: 16px;
+  letter-spacing: 0.13px;
+}
+
+.profitability {
+  background: var(--Accent, #2420fc);
+  position: relative;
+  overflow: hidden;
+}
+.section_bg {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+.profitability .main_content_wrapper {
+  position: relative;
+  z-index: 11;
+}
+.profitability .block_title h2,
+.profitability .block_name h3 {
+  color: #fff;
+}
+.profitability .block_name h3 {
+  opacity: 0.8;
+}
+.block_name h3 {
+  opacity: 0.6;
+}
+.profit_calculation {
+  margin-top: 62px;
+  padding: 72px;
+  width: 100%;
+  border-radius: 24px;
+  background: var(--First, #fff);
+}
+
+.calc_title h3 {
+  color: var(--Second, #111112);
+
+  font-family: TTInterfaces800;
+  font-size: 23px;
+  font-style: normal;
+  font-weight: 820;
+  line-height: 24px; /* 104.348% */
+  margin-bottom: 37px;
+}
+
+.calc_title span {
+  color: #2420fc;
+}
+.profit_calc_wrapper {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+}
+
+.profit_calc_sliders,
+.profit_calc_summ {
+  width: 45%;
+}
+
+.profit_calc_slider_title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.profit_calc_slider_title p {
+  padding: 4px 0px 8px 0px;
+
+  color: var(--OnBg, #111112);
+
+  font-family: TTInterfaces800;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 820;
+  line-height: 24px; /* 141.176% */
+}
+
+.profit_calc_slider {
+  margin-bottom: 48px;
+}
+
+.range {
+  width: 100%;
+  height: 15px;
+  appearance: none;
+  background: #edf1f4;
+  outline: none;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.range::-webkit-slider-thumb {
+  appearance: none;
+  width: 15px;
+  height: 15px;
+  background: #fff;
+  border-radius: 50%;
+  border: 2px solid #022f52;
+  box-shadow: -407px 0 0 400px #022f52;
+  cursor: pointer;
+}
+
+.profit_calc_summ h3 {
+  color: var(--OnBg, #111112);
+  margin-bottom: 20px;
+  font-family: TTInterfaces800;
+  font-size: 52px;
+  font-style: normal;
+  font-weight: 820;
+  line-height: 56px; /* 107.692% */
+  letter-spacing: -0.52px;
+}
+
+.profit_calc_summ .nav_button {
+  width: 100%;
+  padding: 18px 28px;
+  margin-bottom: 14px;
+}
+
+.profit_calc_summ_text p {
+  color: var(--OnBg, #111112);
+  font-family: TTInterfaces500;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 492;
+  line-height: 16px;
+  letter-spacing: 0.13px;
+}
+.profit_calc_summ_text a {
+  color: #2420fc;
+}
+
+.about_project {
+  padding: 144px 0;
+  background: var(--BgSecond, #f0f2f2);
+}
+.about_project .main_content_wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.about_project img {
+  width: 400.884px;
+  height: 96px;
+  margin: 38px;
+  margin-bottom: 48px;
+}
+.about_project .block_name h3,
+.about_project .block_title h2 {
+  text-align: center;
+}
+
+.main_button {
+  padding: 18px 28px;
+}
+
+.how_to_connect span,
+.how_to_connect a {
+  color: #2420fc;
+}
+.how_to_connect_title {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+}
+
+.how_connect_cards {
+  margin-top: 60px;
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+}
+.how_connect_card {
+  width: 30%;
+}
+
+.how_connect_card_num {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 24px;
+  background: var(--BgSecond, #f0f2f2);
+  margin-bottom: 24px;
+}
+
+.how_connect_card_num p {
+  color: var(--OnBg, #111112);
+  text-align: center;
+  font-family: TTInterfaces600;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 584;
+  line-height: 24px; /* 141.176% */
+  letter-spacing: 0.68px;
+  text-transform: uppercase;
+}
+
+.how_connect_card h2 {
+  color: var(--OnBg, #111112);
+  font-family: TTInterfaces800;
+  font-size: 23px;
+  font-style: normal;
+  font-weight: 820;
+  margin-bottom: 15px;
+  line-height: 24px; /* 104.348% */
+}
+
+.how_connect_card p {
+  color: var(--OnBg, #111112);
+  font-family: TTInterfaces500;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 492;
+  line-height: 24px;
+}
+
+.roadmap {
+  background: var(--Accent, #2420fc);
+  position: relative;
+  overflow: hidden;
+}
+.roadmap .block_name h3,
+.roadmap .block_title h2,
+.questions .block_title h2 {
+  color: #fff;
+}
+
+.roadmap .main_content_wrapper {
+  position: relative;
+}
+.road_list {
+  margin-top: 54px;
+  display: flex;
+  align-items: flex-end;
+  position: absolute;
+  left: 0;
+}
+.road_list_step {
+  width: 224px;
+  padding: 4px 12px;
+  height: 380px;
+  border-left: 1px solid var(--G2, #5b58ff);
+}
+.road_list_step_secondary {
+  height: 345px;
+}
+.road_list_step p {
+  color: var(--OnSecond, #fff);
+  font-family: TTInterfaces800;
+  font-size: 23px;
+  font-style: normal;
+  font-weight: 820;
+  line-height: 24px; /* 104.348% */
+  margin-bottom: 12px;
+}
+
+.start_now {
+  margin-top: 400px;
+}
+
+.start_now {
+  border-radius: 32px;
+  border: 1px solid var(--OnSecond, #fff);
+  opacity: 0.8;
+  cursor: pointer;
+  padding: 18px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 11;
+}
+
+.start_now p {
+  color: var(--First, #fff);
+  font-family: TTInterfaces500;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 492;
+  line-height: 24px; /* 141.176% */
+}
+.road_descriptions {
+  left: 12px;
+  position: absolute;
+  top: 72px;
+  display: flex;
+  align-items: start;
+  gap: 24px;
+}
+
+.road_description {
+  padding: 18px 24px;
+  border-radius: 12px;
+  background: var(--First, #fff);
+}
+.road_description:nth-child(2) {
+  width: 425px;
+}
+.road_description:nth-child(3) {
+  width: 200px;
+}
+.road_description p {
+  color: var(--OnBg, #111112);
+  font-family: TTInterfaces500;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 492;
+  line-height: 24px; /* 141.176% */
+}
+
+.questions {
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  background: var(--Accent, #2420fc);
+}
+
+.questions_block {
+  width: 100%;
+}
+.accordion-tab {
+  width: 100%;
+  background: transparent;
+  padding: 24px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  opacity: 0.8;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  color: var(--OnSecond, #fff);
+  font-family: TTInterfaces800;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 820;
+  line-height: 24px; /* 141.176% */
+}
+
+.ui-active svg {
+  transform: rotate(45deg);
+  transition: all 0.4s ease;
+}
+.accordion-panel {
+  padding: 20px 0;
+}
+.accordion-panel p {
+  color: var(--OnSecond, #fff);
+  font-family: TTInterfaces800;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 820;
+  line-height: 24px; /* 141.176% */
+}
+.questions .start_now {
+  margin-top: 50px;
+}
+
+footer {
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  background: var(--Accent, #2420fc);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 24px;
+  gap: 8px;
+}
+
+footer p {
+  color: var(--OnSecond, #fff);
+  font-family: IBMPlexMono500;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px; /* 141.176% */
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+footer span {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.nav_menu_btn,
+.how_connect_btn {
+  display: none;
+}
+
+@media only screen and (max-width: 1512px) {
+  header {
+    height: 982px;
+  }
+}
+
+@media only screen and (max-width: 1080px) {
+  .main_content_wrapper {
+    width: 100%;
+  }
+  section {
+    padding-left: 26px;
+    padding-right: 26px;
+  }
+}
+@media only screen and (max-width: 750px) {
+  .nav_wrapper_left .nav_menu,
+  .nav_auth_btns {
+    display: none;
+  }
+  .nav_menu_btn {
+    display: block;
+  }
+  .block_title br {
+    display: none;
+  }
+  .advantage_cards,
+  .how_connect_cards {
+    flex-wrap: wrap;
+  }
+  .advantage_card,
+  .how_connect_card {
+    width: 47%;
+  }
+  .advantage_card:nth-child(3),
+  .how_connect_card:nth-child(3) {
+    width: 100%;
+    margin-top: 30px;
+  }
+  .about_project .block_title h2 {
+    font-size: 86px;
+    text-align: center;
+    line-height: 100%;
+    letter-spacing: -2.58px;
+  }
+  .how_to_connect_title .block_title {
+    width: 40%;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .nav_wrapper {
+    padding: 32px 24px;
+  }
+  header {
+    height: 100vh;
+  }
+  .header_content {
+    margin: 0;
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+  .header_content h1 {
+    font-size: 33px;
+    font-style: normal;
+    font-weight: 820;
+    line-height: 32px; /* 96.97% */
+    margin-bottom: 20px;
+  }
+  .header_content p {
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 492;
+    line-height: 20px;
+  }
+  .header_button {
+    width: 100%;
+  }
+  .header_bottom_content {
+    padding: 0 24px;
+  }
+  .acoounts_count,
+  .header_bootom_text {
+    font-size: 11px;
+  }
+  .header_line {
+    margin: 5px 0;
+  }
+  section {
+    padding: 24px;
+  }
+  .block_title h2 {
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 820;
+    line-height: 24px;
+    letter-spacing: -0.44px;
+  }
+  .block_name h3 {
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 16px; /* 145.455% */
+    letter-spacing: 1px;
+  }
+  .advantage_card {
+    width: 100%;
+    margin-bottom: 30px;
+    margin-top: 0 !important;
+  }
+  .advantage_text_wrapper {
+    width: 100%;
+  }
+  .advantage_text {
+    padding: 16px 24px;
+  }
+  .profit_calculation {
+    margin-top: 30px;
+    padding: 16px;
+    margin-bottom: 30px;
+  }
+  .profit_calc_wrapper {
+    flex-direction: column;
+  }
+  .profit_calc_sliders,
+  .profit_calc_summ {
+    width: 100%;
+  }
+  .profit_summ {
+    text-align: center;
+  }
+  .nav_button {
+    padding: 11px 20px;
+  }
+
+  .about_project .block_title h2 {
+    font-size: 33px;
+    font-style: normal;
+    font-weight: 820;
+    line-height: 32px;
+  }
+  .about_project {
+    padding: 64px 24px;
+  }
+  .about_project img {
+    width: 165.161px;
+    height: auto;
+    margin-top: 30px;
+    margin-bottom: 15px;
+  }
+  .how_to_connect_title .main_button {
+    display: none;
+  }
+  .how_to_connect_title .block_title {
+    width: 60%;
+  }
+  .how_connect_card {
+    width: 100%;
+    margin-bottom: 30px;
+    margin-top: 0 !important;
+  }
+  .how_connect_btn {
+    display: block;
+    width: 100%;
+  }
+  .how_connect_cards {
+    margin-top: 30px;
+  }
+  .road_description p {
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 492;
+    line-height: 16px; /* 123.077% */
+  }
+  .road_description br {
+    display: none;
+  }
+  .road_list_step {
+    height: 200px;
+  }
+  .start_now {
+    margin-top: 240px;
+    padding: 11px 24px;
+  }
+  .accordion-tab {
+    font-size: 13px;
+    text-align: left;
+    padding: 16px 0;
+  }
+  .accordion-panel {
+    padding: 10px 0;
+  }
+  .accordion-panel p {
+    font-size: 11px;
+  }
+  .questions .start_now {
+    margin-top: 36px;
+  }
+  footer p {
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+  .block_title br, .header_content p br {
+    display: none !important; 
+  }
+  .header_button {
+    padding: 11px 20px;
+    font-size: 13px;
+  }
+}

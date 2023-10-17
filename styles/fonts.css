@@ -1,0 +1,34 @@
+@font-face {
+  font-family: TTInterfaces300;
+  src: url(../assets/fonts/TTInterfaces-Light.woff);
+}
+
+@font-face {
+  font-family: TTInterfaces400;
+  src: url(../assets/fonts/TTInterfaces-Regular.woff);
+}
+
+@font-face {
+  font-family: TTInterfaces500;
+  src: url(../assets/fonts/TTInterfaces-Medium.woff);
+}
+
+@font-face {
+  font-family: TTInterfaces600;
+  src: url(../assets/fonts/TTInterfaces-SemiBold.woff);
+}
+
+@font-face {
+  font-family: TTInterfaces800;
+  src: url(../assets/fonts/TTInterfaces-ExtraBold.woff);
+}
+
+@font-face {
+  font-family: TTInterfaces900;
+  src: url(../assets/fonts/TTInterfaces-Black.woff);
+}
+
+@font-face {
+  font-family: IBMPlexMono500;
+  src: url(../assets/fonts/IBMPlexMono-Medium.ttf);
+}
