@@ -20,8 +20,7 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  position: fixed;
-  z-index: 111;
+
 }
 button {
   transition: all 0.4s ease;
@@ -662,6 +661,8 @@ input[type="range"]:active::-moz-range-progress {
   left: 0;
   overflow-x: auto;
   overflow-y: hidden;
+  white-space: nowrap;
+  cursor: grab;
 }
 .road_list::-webkit-scrollbar {
   display: none; /* Скрывает ползунок в Chrome и Safari */
@@ -711,6 +712,8 @@ input[type="range"]:active::-moz-range-progress {
 .active_white_menu {
   background: #fff;
   padding: 20px 26px;
+  position: fixed;
+  z-index: 111;
 }
 .active_white_menu p {
   color: #000;
@@ -979,9 +982,7 @@ footer span {
     right: 24px;
     bottom: 24px;
   }
-  .active_white_menu {
-    background: transparent;
-  }
+
   .header_content {
     margin: 0;
     padding-left: 24px;

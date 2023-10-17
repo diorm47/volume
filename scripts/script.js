@@ -62,3 +62,34 @@ window.addEventListener("scroll", function () {
     menu.classList.remove("active_white_menu");
   }
 });
+
+// cursor grab
+let isMouseDown = false;
+let startX;
+
+const scrollContainer = document.querySelector(".road_list");
+
+scrollContainer.addEventListener("mousedown", (e) => {
+  isMouseDown = true;
+  startX = e.pageX - scrollContainer.offsetLeft;
+  scrollContainer.style.cursor = 'grabbing';
+});
+
+scrollContainer.addEventListener("mouseleave", () => {
+  isMouseDown = false;
+  scrollContainer.style.cursor = 'grab';
+});
+
+scrollContainer.addEventListener("mouseup", () => {
+  isMouseDown = false;
+  scrollContainer.style.cursor = 'grab';
+});
+
+scrollContainer.addEventListener("mousemove", (e) => {
+  if (!isMouseDown) return;
+  e.preventDefault();
+  const x = e.pageX - scrollContainer.offsetLeft;
+  const scroll = (x - startX);
+  scrollContainer.scrollLeft -= scroll;
+  startX = x;
+});
