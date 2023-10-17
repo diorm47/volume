@@ -716,7 +716,7 @@ footer span {
     padding: 32px 24px;
   }
   header {
-    height: 100vh;
+    height: 90vh;
   }
   .header_content {
     margin: 0;
@@ -793,7 +793,7 @@ footer span {
     text-align: center;
   }
   .nav_button {
-    padding: 11px 20px;
+    padding: 11px 20px !important;
   }
 
   .about_project .block_title h2 {
