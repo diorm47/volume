@@ -838,6 +838,9 @@ footer {
   padding: 24px;
   gap: 8px;
 }
+.advantage_card {
+  width: 31%;
+}
 
 footer p {
   color: var(--OnSecond, #fff);
