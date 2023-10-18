@@ -836,7 +836,7 @@ footer {
   width: 31%;
 }
 
-footer p {
+footer p, footer a {
   color: var(--OnSecond, #fff);
   font-family: IBMPlexMono500;
   font-size: 17px;
