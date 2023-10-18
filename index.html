@@ -45,7 +45,7 @@
           </div>
           <div class="nav_mob_menu">
             <div class="mob_menu_nav_logo">
-              <img src="./assets/logo.svg" alt="">
+              <img src="./assets/logo.svg" alt="" />
             </div>
             <img
               onclick="toggleMob()"
@@ -68,11 +68,10 @@
               <a href="#">
                 <div class="nav_menu_item"><p>Войти в личный кабинет</p></div>
               </a>
-  
+
               <button class="nav_button">Начать бесплатно</button>
             </div>
           </div>
-     
         </div>
       </nav>
       <div class="header_content">
@@ -99,6 +98,9 @@
           <p>?</p>
         </div>
       </div>
+      <video class="video" autoplay muted loop>
+        <source src="./assets/cube.mp4" type="video/mp4" />
+      </video>
     </header>
     <section class="advantages">
       <div class="main_content_wrapper">
@@ -369,7 +371,10 @@
                 </p>
               </div>
               <div class="road_description">
-                <p>Тестовый запуск инструментов ИИ <br> для фондового рынка.</p>
+                <p>
+                  Тестовый запуск инструментов ИИ <br />
+                  для фондового рынка.
+                </p>
               </div>
             </div>
           </div>
@@ -621,8 +626,22 @@
       <p>
         <a href="./policy.html">Политика</a>
         <a href="./agreement.html">Соглашение</a>
+        <a href="/">FAQ</a>
       </p>
     </footer>
+    <script>
+      const videoBackground = document.querySelector(".video");
+      const advantages = document.querySelector(".advantages");
+
+      window.addEventListener("scroll", function () {
+        const rect = advantages.getBoundingClientRect();
+        if (rect.top <= 0) {
+          videoBackground.style.position = "absolute";
+        } else {
+          videoBackground.style.position = "fixed";
+        }
+      });
+    </script>
     <script src="./scripts/script.js"></script>
   </body>
 </html>
