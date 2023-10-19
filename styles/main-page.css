@@ -1,6 +1,6 @@
 header {
   width: 100%;
-  height: 100vh;
+  height: 105vh;
   /* background: url(../assets/images/header-bg.png); */
   background: url(../assets/images/header-bg.png);
   background-position: center;
@@ -18,7 +18,9 @@ video {
   height: 100%;
   object-fit: cover;
 }
-nav, .header_content, .header_bottom_content {
+nav,
+.header_content,
+.header_bottom_content {
   position: relative;
   z-index: 110;
 }
@@ -161,7 +163,7 @@ button:hover {
 .header_bottom_content {
   width: 100%;
   position: absolute;
-  bottom: 32px;
+  bottom: 60px;
   padding-right: 36px;
   padding-left: 36px;
   display: flex;
@@ -210,6 +212,7 @@ section {
 .advantages {
   border-radius: 60px 60px 0px 0px;
   background: #fff;
+  margin-top: -30px;
 }
 .block_name h3 {
   color: var(--OnBg, #111112);
@@ -853,7 +856,8 @@ footer {
   width: 31%;
 }
 
-footer p, footer a {
+footer p,
+footer a {
   color: var(--OnSecond, #fff);
   font-family: IBMPlexMono500;
   font-size: 17px;
@@ -918,6 +922,13 @@ footer span {
     padding-left: 26px;
     padding-right: 26px;
   }
+  .road_list {
+    left: -36px;
+    padding-left: 36px;
+  }
+  .road_descriptions {
+    padding-left: 36px;
+  }
 }
 @media only screen and (max-width: 750px) {
   .nav_auth_btns .nav_button {
@@ -981,7 +992,7 @@ footer span {
   }
 }
 .road_description:nth-child(4) br {
- display: none;
+  display: none;
 }
 
 @media only screen and (max-width: 500px) {
@@ -997,8 +1008,7 @@ footer span {
   }
   .road_description:nth-child(4) br {
     display: block;
-   }
-   
+  }
 
   .header_question {
     right: 24px;
@@ -1180,7 +1190,7 @@ footer span {
 
   .road_descriptions {
     width: 2364px;
-}
+  }
   .road_description:first-child {
     width: 424px;
   }
@@ -1191,10 +1201,56 @@ footer span {
     width: 1200px;
   }
   .advantages {
-    border-radius: 15px 15px 0 0;
+    border-radius: 20px 20px 0 0;
   }
   video {
     height: auto;
     top: 35%;
+  }
+  .advantage_card_title h4,
+  .how_connect_card h2 {
+    font-size: 17px;
+    margin-bottom: 5px;
+  }
+  .advantage_card_text p,
+  .how_connect_card p {
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 492;
+    line-height: 16px;
+  }
+  .advantage_card_icon,
+  .how_connect_card_num {
+    margin-bottom: 13px;
+  }
+  .advantage_cards {
+    margin-bottom: 0;
+  }
+  .calc_title h3 {
+    font-size: 17px;
+    margin-bottom: 20px;
+  }
+  .profit_calc_slider_title p,
+  .nav_button,
+  .start_now p {
+    font-size: 13px;
+  }
+  .profit_calc_summ h3 {
+    font-size: 46px;
+  }
+  .profit_calc_summ_text p,
+  footer p,
+  footer a {
+    font-size: 11px;
+  }
+  .road_list {
+    left: -24px;
+    padding-left: 24px;
+  }
+  .road_descriptions {
+    padding-left: 24px;
+  }
+  .header_bootom_text {
+    opacity: 0.6;
   }
 }

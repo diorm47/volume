@@ -18,19 +18,19 @@
             </a>
             <div class="nav_menu">
               <a href="#">
-                <div class="nav_menu_item"><p>Тарифы</p></div>
+                <div class="nav_menu_item dark_menu_item"><p>Тарифы</p></div>
               </a>
               <a href="./white-paper.html">
-                <div class="nav_menu_item"><p>White-paper</p></div>
+                <div class="nav_menu_item dark_menu_item"><p>White-paper</p></div>
               </a>
               <a href="#">
-                <div class="nav_menu_item"><p>О нас</p></div>
+                <div class="nav_menu_item dark_menu_item"><p>О нас</p></div>
               </a>
             </div>
           </div>
           <div class="nav_auth_btns">
             <a href="#">
-              <div class="nav_menu_item"><p>Войти</p></div>
+              <div class="nav_menu_item dark_menu_item"><p>Войти</p></div>
             </a>
 
             <button class="nav_button">Начать бесплатно</button>
@@ -678,7 +678,8 @@
             <p>
               Вопросы об Условиях обслуживания следует направлять в &Volume по
               адресу Вопросы об Условиях обслуживания следует направлять в
-              &Volume по адресу <a href="mailto:support@nvolume.io">support@nvolume.io</a>
+              &Volume по адресу
+              <a href="mailto:support@nvolume.io">support@nvolume.io</a>
             </p>
           </div>
         </div>
@@ -762,6 +763,12 @@
         });
       });
     </script>
-    <script src="./scripts/script.js"></script>
+    <script>
+      // mob nav
+      const nav_wrapper = document.querySelector(".nav_wrapper");
+      const toggleMob = () => {
+        nav_wrapper.classList.toggle("mob_menu");
+      };
+    </script>
   </body>
 </html>

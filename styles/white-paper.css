@@ -1,6 +1,5 @@
-.white_paper_page .nav_menu p,
-.white_paper_page .nav_menu_item p {
-  color: #05061f;
+.dark_menu_item p {
+  color: #05061f !important;
 }
 
 .white_paper_content {

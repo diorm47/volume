@@ -18,19 +18,19 @@
             </a>
             <div class="nav_menu">
               <a href="#">
-                <div class="nav_menu_item"><p>Тарифы</p></div>
+                <div class="nav_menu_item dark_menu_item"><p>Тарифы</p></div>
               </a>
               <a href="./white-paper.html">
-                <div class="nav_menu_item"><p>White-paper</p></div>
+                <div class="nav_menu_item dark_menu_item"><p>White-paper</p></div>
               </a>
               <a href="#">
-                <div class="nav_menu_item"><p>О нас</p></div>
+                <div class="nav_menu_item dark_menu_item"><p>О нас</p></div>
               </a>
             </div>
           </div>
           <div class="nav_auth_btns">
             <a href="#">
-              <div class="nav_menu_item"><p>Войти</p></div>
+              <div class="nav_menu_item dark_menu_item"><p>Войти</p></div>
             </a>
 
             <button class="nav_button">Начать бесплатно</button>
@@ -516,7 +516,13 @@
           <div id="section11">
             <h2>Изменения в настоящей Политике</h2>
             <p>
-              Настоящая Политика конфиденциальности вступает в силу с даты, указанной выше. Мы можем периодически обновлять настоящую Политику, и о любых существенных изменениях, влияющих на ранее собранную Личную информацию, будет сообщено заранее. Мы опубликуем обновленную Политику на нашей Платформе, предоставим уведомления через Сайт или по электронной почте (если она будет предоставлена) и будем рекомендовать регулярно просматривать Политику.
+              Настоящая Политика конфиденциальности вступает в силу с даты,
+              указанной выше. Мы можем периодически обновлять настоящую
+              Политику, и о любых существенных изменениях, влияющих на ранее
+              собранную Личную информацию, будет сообщено заранее. Мы опубликуем
+              обновленную Политику на нашей Платформе, предоставим уведомления
+              через Сайт или по электронной почте (если она будет предоставлена)
+              и будем рекомендовать регулярно просматривать Политику.
             </p>
           </div>
         </div>
@@ -531,6 +537,13 @@
         <a href="/">FAQ</a>
       </p>
     </footer>
+    <script>
+      // mob nav
+      const nav_wrapper = document.querySelector(".nav_wrapper");
+      const toggleMob = () => {
+        nav_wrapper.classList.toggle("mob_menu");
+      };
+    </script>
 
     <script>
       function smoothScroll(target, duration) {
@@ -600,6 +613,5 @@
         });
       });
     </script>
-    <script src="./scripts/script.js"></script>
   </body>
 </html>

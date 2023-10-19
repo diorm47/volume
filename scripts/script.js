@@ -95,3 +95,12 @@ scrollContainer.addEventListener("mousemove", (e) => {
 });
 
 
+
+// Video 
+
+document.addEventListener("DOMContentLoaded", function() {
+  const videoElement = document.querySelector("video");
+  if (videoElement) {
+    videoElement.play();
+  }
+});
