@@ -3,13 +3,15 @@
 }
 
 .white_paper_content {
-  width: 980px;
+  width: 100%;
   margin: 0 auto;
-  margin-top: 50px;
   display: flex;
   align-items: start;
-  justify-content: space-between;
+  gap: 20px;
   position: relative;
+
+  background: var(--BgSecond, #f0f2f2);
+  padding: 36px;
   padding-bottom: 100px;
 }
 .white_paper_left_menu {
@@ -19,7 +21,7 @@
 }
 
 .white_paper_right_content {
-  width: 570px;
+  width: 700px;
 }
 .white_paper_left_menu p {
   color: #05061f;
@@ -28,7 +30,7 @@
   font-style: normal;
   font-weight: 400;
   line-height: 24px; /* 141.176% */
-  margin-bottom: 20px;
+  margin-bottom: 8px;
 }
 
 .top_menu_item p {
@@ -49,38 +51,48 @@
   margin-bottom: 22px;
 }
 
-.white_paper_right_content p {
+.white_paper_right_content p,
+.white_paper_right_content h3 {
   color: #05061f;
-  font-family: TTInterfaces400;
+  font-family: TTInterfaces500;
   font-size: 17px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 500;
   line-height: 24px; /* 141.176% */
   margin-bottom: 22px;
 }
 .white_paper_right_content ol li {
   font-family: TTInterfaces400;
 }
+.pages_title_templ {
+  margin-bottom: 60px;
+  margin-top: 40px;
+  padding-left: 36px;
+}
+.pages_title_templ h1 {
+  color: var(--OnBg, #111112);
+  font-family: TTInterfaces800;
+  font-size: 86px;
+  font-style: normal;
+  font-weight: 820;
+  line-height: 84px; /* 97.674% */
+  letter-spacing: -2.58px;
+
+}
 
 .white_paper_right_content h2 {
-  margin-top: 26px;
-  margin-bottom: 22px;
-  color: #05061f;
-  font-family: TTInterfaces600;
-  font-size: 23px;
+  color: var(--Second, #111112);
+  font-size: 52px;
   font-style: normal;
-  font-weight: 600;
-  line-height: 24px; /* 104.348% */
+  font-weight: 820;
+  line-height: 48px; /* 92.308% */
+  font-family: TTInterfaces800;
+  letter-spacing: -0.52px;
+  margin-bottom: 26px;
 }
 
 .white_paper_right_content h3 {
-  color: #05061f;
-  font-family: TTInterfaces600;
-  font-size: 17px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 24px; /* 141.176% */
-  margin-bottom: 22px;
+  margin: 0;
 }
 
 .picture_text {
@@ -193,5 +205,18 @@
   }
   .white_paper_content {
     margin-top: 0;
+  }
+  .pages_title_templ {
+    margin-bottom: 30px;
+    margin-top: 20px;
+    padding-left: 24px;
+  }
+  .pages_title_templ h1 {
+  
+    font-size: 33px;
+    font-style: normal;
+    font-weight: 820;
+    line-height: 32px; /* 96.97% */
+  
   }
 }

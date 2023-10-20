@@ -848,8 +848,23 @@ footer {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  text-align: center;
   padding: 24px;
+
+}
+.footer_wrapper {
+  width: 970px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+.footer_left {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.footer_right {
+  display: flex;
+  align-items: center;
   gap: 8px;
 }
 .advantage_card {
@@ -915,7 +930,7 @@ footer span {
   padding: 0 24px;
 }
 @media only screen and (max-width: 1080px) {
-  .main_content_wrapper {
+  .main_content_wrapper, .footer_wrapper {
     width: 100%;
   }
   section {
@@ -996,6 +1011,11 @@ footer span {
 }
 
 @media only screen and (max-width: 500px) {
+  .footer_wrapper {
+    flex-direction: column;
+    align-items: start;
+    gap: 16px;
+  }
   .nav_wrapper {
     padding: 32px 24px;
   }
