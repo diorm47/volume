@@ -47,6 +47,13 @@ Tablist.initAll();
 const nav_wrapper = document.querySelector(".nav_wrapper");
 const toggleMob = () => {
   nav_wrapper.classList.toggle("mob_menu");
+  if (nav_wrapper.classList[1] == "mob_menu") {
+    document.querySelector(".header_content").style.display = "none";
+    document.querySelector(".header_bottom_content").style.display = "none";
+  } else {
+    document.querySelector(".header_content").style.display = "block";
+    document.querySelector(".header_bottom_content").style.display = "flex";
+  }
 };
 
 // const menu = document.querySelector(".nav_wrapper");
@@ -72,33 +79,31 @@ const scrollContainer = document.querySelector(".road_list");
 scrollContainer.addEventListener("mousedown", (e) => {
   isMouseDown = true;
   startX = e.pageX - scrollContainer.offsetLeft;
-  scrollContainer.style.cursor = 'grabbing';
+  scrollContainer.style.cursor = "grabbing";
 });
 
 scrollContainer.addEventListener("mouseleave", () => {
   isMouseDown = false;
-  scrollContainer.style.cursor = 'grab';
+  scrollContainer.style.cursor = "grab";
 });
 
 scrollContainer.addEventListener("mouseup", () => {
   isMouseDown = false;
-  scrollContainer.style.cursor = 'grab';
+  scrollContainer.style.cursor = "grab";
 });
 
 scrollContainer.addEventListener("mousemove", (e) => {
   if (!isMouseDown) return;
   e.preventDefault();
   const x = e.pageX - scrollContainer.offsetLeft;
-  const scroll = (x - startX);
+  const scroll = x - startX;
   scrollContainer.scrollLeft -= scroll;
   startX = x;
 });
 
+// Video
 
-
-// Video 
-
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
   const videoElement = document.querySelector("video");
   if (videoElement) {
     videoElement.play();
