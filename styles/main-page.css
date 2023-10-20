@@ -10,6 +10,9 @@ header {
   overflow: hidden;
   background-attachment: fixed;
 }
+.link {
+  color: #3a86ff;
+}
 video {
   position: fixed;
   top: 0;
