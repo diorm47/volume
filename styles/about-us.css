@@ -100,7 +100,6 @@
 
 .about_card {
   width: 300px;
-
 }
 .about_card .about_name p {
   margin-top: 27px;
@@ -162,6 +161,13 @@
     width: 100%;
   }
 }
+@media only screen and (max-width: 660px) {
+  .about_cards {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+}
 
 @media only screen and (max-width: 500px) {
   .pages_title_templ p {
@@ -196,9 +202,5 @@
   .about_img p {
     padding-left: 24px;
     margin-bottom: 20px;
-  }
-  .about_cards {
-    display: flex;
-    flex-direction: column;
   }
 }
