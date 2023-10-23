@@ -170,6 +170,7 @@
 @media only screen and (max-width: 500px) {
   .white_paper_content {
     padding: 0 24px;
+    padding-top: 24px;
     padding-bottom: 100px;
   }
   .white_paper_right_content img {
