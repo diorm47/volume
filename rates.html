@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Тарифы | &Volume</title>
+    <link rel="stylesheet" href="./styles/main.css" />
+  </head>
+  <body>
+    <div class="header_question">
+      <p>?</p>
+    </div>
+    <header class="rates_head">
+      <nav>
+        <div class="nav_wrapper">
+          <div class="nav_wrapper_left">
+            <a href="/">
+              <div class="nav_logo">
+                <img src="./assets/logo.svg" alt />
+              </div>
+            </a>
+            <div class="nav_menu ">
+              <a href="./rates.html">
+                <div class="nav_menu_item"><p>Тарифы</p></div>
+              </a>
+              <a href="./white-paper.html">
+                <div class="nav_menu_item"><p>White-paper</p></div>
+              </a>
+              <a href="./about-us.html">
+                <div class="nav_menu_item"><p>О нас</p></div>
+              </a>
+            </div>
+          </div>
+          <div class="nav_auth_btns">
+            <a href="#">
+              <div class="nav_menu_item"><p>Войти</p></div>
+            </a>
+
+            <button class="nav_button">Начать бесплатно</button>
+          </div>
+          <div class="nav_menu_btn" onclick="toggleMob()">
+            <img src="./assets/icons/menu.svg" alt="" />
+          </div>
+          <div class="nav_mob_menu">
+            <div class="mob_menu_nav_logo">
+              <img src="./assets/logo.svg" alt="" />
+            </div>
+            <img
+              onclick="toggleMob()"
+              class="exit_mob_menu"
+              src="./assets/icons/exit.svg"
+              alt=""
+            />
+            <div class="nav_menu rates_mob_menu">
+              <a href="./rates.html">
+                <div class="nav_menu_item"><p>Тарифы</p></div>
+              </a>
+              <a href="./white-paper.html">
+                <div class="nav_menu_item"><p>White-paper</p></div>
+              </a>
+              <a href="./about-us.html">
+                <div class="nav_menu_item"><p>О нас</p></div>
+              </a>
+            </div>
+            <div class="nav_auth_btns">
+              <a href="#">
+                <div class="nav_menu_item"><p>Войти в личный кабинет</p></div>
+              </a>
+
+              <button class="nav_button">Начать бесплатно</button>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div class="rates_header">
+        <div class="rates_title">
+          <h1>Выбери план</h1>
+          <p>
+            При оплате подписки платёжный сервис берет комиссию за проведение
+            транзакции. <br />
+            Внимательно указывайте сумму с учётом комиссии.
+          </p>
+        </div>
+      </div>
+      <div class="rates_cards">
+        <div class="rates_card">
+          <div class="rates_card_title">
+            <h3>Пробный</h3>
+            <p>Для знакомства с &Volume</p>
+          </div>
+          <div class="rates_card_cost">
+            <h3>Бесплатно</h3>
+            <p>/ 14 дней</p>
+          </div>
+          <div class="rates_card_desc">
+            <p>Лимит суммы в торгах <br />до $200</p>
+          </div>
+        </div>
+        <div class="rates_card">
+          <div class="rates_card_title">
+            <h3>Стартовый</h3>
+            <p>Для новых инвесторов</p>
+          </div>
+          <div class="rates_card_cost">
+            <h2>$ 25</h2>
+            <p>/ ежемесячно</p>
+          </div>
+          <div class="rates_card_desc">
+            <p>Лимит суммы в торгах <br />до $400</p>
+          </div>
+        </div>
+        <div class="rates_card">
+          <div class="rates_card_title">
+            <h3>Улучшенный</h3>
+            <p>Для опытных инвесторов</p>
+          </div>
+          <div class="rates_card_cost">
+            <h2>$ 50</h2>
+            <p>/ ежемесячно</p>
+          </div>
+          <div class="rates_card_desc">
+            <p>Лимит суммы в торгах <br />от $451  до $900</p>
+          </div>
+        </div>
+        <div class="rates_card">
+          <div class="rates_card_title">
+            <h3>Продвинутый</h3>
+            <p>Для профессионалов</p>
+          </div>
+          <div class="rates_card_cost">
+            <h2>$ 100</h2>
+            <p>/ ежемесячно</p>
+          </div>
+          <div class="rates_card_desc">
+            <p>Лимит суммы в торгах <br />от $901 до $3000</p>
+          </div>
+        </div>
+      </div>
+      <div class="rates_header_btn">
+        <button class="header_button">Начать бесплатно</button>
+      </div>
+
+      <video class="video" autoplay muted loop>
+        <source src="./assets/cube.mp4" type="video/mp4" />
+      </video>
+    </header>
+    <div class="rates_content_wrapper">
+      <div class="rates_content">
+        <div class="block_name">
+          <h3>о лимите</h3>
+        </div>
+        <div class="block_title">
+          <h2>Не ограничение, а гарантия безопасности</h2>
+        </div>
+        <div class="rates_description">
+          <p>
+            На время запуска проекта, вне зависимости от баланса счёта, в торгах
+            будет использоваться сумма согласно тарифу, но не более 3000$.
+            Например, баланс счета в начале месяца 3 000$, через месяц торгов
+            баланс увеличился до 4 000$. При том, что на счету уже 4 000$,
+            в следующем месяце мы снова будем использовать только 3 000$ от этой
+            суммы.
+          </p>
+        </div>
+        <div class="block_title">
+          <h2>Условия оплаты</h2>
+        </div>
+        <div class="rates_description">
+          <ul>
+            <li>
+              <p>
+                Принимаем оплату только в крипто. Международные платежные
+                системы будут подключены позже. 
+              </p>
+            </li>
+            <li>
+              <p>
+                Проект находится в стадии технического запуска. В случае
+                изменений условий использования пользователи будут уведомлены не
+                менее чем за 1 календарный месяц.
+              </p>
+            </li>
+          </ul>
+        </div>
+        <div class="advantage_text">
+          <div class="advantage_text_wrapper">
+            <h3>Не теряйте самоконтроль</h3>
+            <p>
+              Инвестиции в торговлю криптовалютой рискованнее, чем традиционные
+              инструменты (вклад в банк, покупка акцией на долгий срок и т.п.),
+              рассчитывайте свои риски и не инвестируйте все свои сбережения.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="rates_footer">
+      <div class="footer_wrapper">
+        <div class="footer_left">
+          <p><span>© 2023</span> &Volume, <span>все права защищены</span></p>
+          <p>
+            <a href="./policy.html">Политика</a>
+            <a href="./agreement.html">Соглашение</a>
+          </p>
+        </div>
+        <div class="footer_right">
+          <a href="#"> <p>en</p></a>
+          <a href="#"> <p>SE</p></a>
+        </div>
+      </div>
+    </footer>
+    <script>
+      const nav_wrapper = document.querySelector(".nav_wrapper");
+      const toggleMob = () => {
+        nav_wrapper.classList.toggle("mob_menu");
+        if (nav_wrapper.classList[1] == "mob_menu") {
+          document.querySelector(".rates_cards").style.display = "none";
+        } else {
+          document.querySelector(".rates_cards").style.display = "grid";
+        }
+      };
+    </script>
+  </body>
+</html>
