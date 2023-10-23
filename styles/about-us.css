@@ -99,7 +99,7 @@
 }
 
 .about_card {
-  width: 300px;
+  width: 270px;
 }
 .about_card .about_name p {
   margin-top: 27px;
@@ -138,9 +138,13 @@
 }
 
 .about_cards {
-  display: grid;
+  /* display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 40px;
+  gap: 40px; */
+  display: flex;
+  align-items: start;
+  margin-top: 48px;
+  gap: 20px;
 }
 .about_cards p {
   width: 100%;
@@ -161,13 +165,13 @@
     width: 100%;
   }
 }
-@media only screen and (max-width: 660px) {
+/* @media only screen and (max-width: 660px) {
   .about_cards {
     display: flex;
     flex-direction: column;
     gap: 40px;
   }
-}
+} */
 
 @media only screen and (max-width: 500px) {
   .pages_title_templ p {
@@ -202,5 +206,10 @@
   .about_img p {
     padding-left: 24px;
     margin-bottom: 20px;
+  }
+  .about_cards {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
   }
 }
