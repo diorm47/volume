@@ -14,11 +14,10 @@
   background: var(--BgSecond, #f0f2f2);
 }
 .about_main_text_wrapper {
-  width: 890px;
+  width: 970px;
   margin: 0 auto;
 }
 .about_main_text_wrapper p {
-  width: 700px;
   color: var(--OnBg, #111112);
   margin-bottom: 20px;
   /* Body */
@@ -100,7 +99,8 @@
 }
 
 .about_card {
-  width: 260px;
+  width: 300px;
+
 }
 .about_card .about_name p {
   margin-top: 27px;
@@ -139,9 +139,9 @@
 }
 
 .about_cards {
-  display: flex;
-  align-items: start;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
 }
 .about_cards p {
   width: 100%;
@@ -181,7 +181,7 @@
   .about_whitepaper {
     padding: 24px 36px;
   }
-  .about_main_text  {
+  .about_main_text {
     padding: 24px;
   }
   .about_main_text_wrapper {
