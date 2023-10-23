@@ -15,7 +15,10 @@ const rangeData = {
 };
 
 const calculate = () => {
-  profit_summ.innerHTML = `$${rangeData.firstValue * rangeData.secondValue}`;
+  profit_summ.innerHTML = `$${
+    ((rangeData.firstValue * rangeData.secondValue) / 100) * 15 +
+    rangeData.firstValue
+  }`;
 };
 
 // Initialize the sum

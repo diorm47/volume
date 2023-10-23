@@ -27,10 +27,10 @@
 }
 .white_paper_left_menu p {
   color: #05061f;
-  font-family: TTInterfaces400;
+  font-family: TTInterfaces500;
   font-size: 17px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 500;
   line-height: 24px; /* 141.176% */
   margin-bottom: 20px;
 }
@@ -40,7 +40,8 @@
   font-family: TTInterfaces600;
 }
 .main_menu_item p {
-  font-family: TTInterfaces500;
+  font-family: TTInterfaces600;
+  font-weight: 600;
 }
 
 .right_content_title h1 {
@@ -54,16 +55,16 @@
 }
 
 .white_paper_right_content p {
-  color: #05061f;
-  font-family: TTInterfaces400;
+  color: #111112;
+  font-family: TTInterfaces500;
   font-size: 17px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 500;
   line-height: 24px; /* 141.176% */
   margin-bottom: 20px;
 }
 .white_paper_right_content ol li {
-  font-family: TTInterfaces400;
+  font-family: TTInterfaces500;
 }
 .pages_title_templ {
   margin-bottom: 60px;
@@ -102,11 +103,11 @@
 
 .picture_text {
   color: #05061f !important;
-  font-family: TTInterfaces400;
+  font-family: TTInterfaces500;
   font-size: 12px !important;
   font-style: normal;
-  font-weight: 400;
-  line-height: 24px; /* 200% */
+  font-weight: 500;
+  line-height: 140% !important;
   margin-bottom: 22px;
 }
 
@@ -130,16 +131,16 @@
 .link_menu_item,
 .link_menu_item p {
   color: #2420fc !important;
-  font-family: TTInterfaces400;
+  font-family: TTInterfaces500;
   font-size: 17px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 500;
   line-height: 24px; /* 141.176% */
 }
 
 .active_menu_paper p {
   color: #2420fc !important;
-  font-family: TTInterfaces500;
+  font-family: TTInterfaces600;
 }
 
 @media only screen and (max-width: 1020px) {

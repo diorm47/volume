@@ -154,13 +154,15 @@
   margin-bottom: 20px;
   margin-top: 0;
 }
+.rates_content .advantage_text {
+  margin-top: 48px;
+}
 
 @media only screen and (max-width: 1600px) {
   .rates_head {
     height: 108vh;
   }
 }
-
 
 @media only screen and (max-width: 1280px) {
   .rates_cards {
@@ -272,7 +274,7 @@
     width: 250px;
   }
   .rates_head {
-    height: 100vh;
+  
     overflow: auto;
     overflow: visible;
   }
@@ -281,9 +283,7 @@
     padding-left: 24px;
     padding-right: 24px;
   }
-  .rates_content {
-    padding-top: 650px;
-  }
+
   .rates_header_btn {
     z-index: 24;
   }
