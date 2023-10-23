@@ -136,14 +136,14 @@
 }
 .rates_description p {
   color: var(--OnBg, #111112);
+  /* color: #05061f; */
   opacity: 0.9;
-  font-family: TTInterfaces400;
+  font-family: TTInterfaces500;
   font-size: 17px;
-  width: 700px;
   margin-top: 26px;
   margin-bottom: 34px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 500;
   line-height: 24px; /* 141.176% */
 }
 .rates_description ul {
