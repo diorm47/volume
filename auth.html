@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Войти | &Volume</title>
+    <title>Авторизация | &Volume</title>
     <link rel="stylesheet" href="./styles/main.css" />
     <link rel="icon" href="./favicon/favicon.ico" />
     <link rel="apple-touch-icon" href="./favicon/android-chrome-192x192.png" />
@@ -75,7 +75,7 @@
     </nav>
     <div class="login_page">
       <div class="login_title">
-        <h2>Войти</h2>
+        <h2>Регистрация</h2>
       </div>
       <form id="loginForm">
         <div>
@@ -102,8 +102,10 @@
         </div>
         <div>
           <div class="login_input_titles">
-            <p>Пароль</p>
-            <a class="recovery_password" href="./reset.html">Забыли пароль?</a>
+            <p>Реферальный код (необязательно)</p>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path d="M7 10L12 15L17 10" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
           </div>
 
           <div class="login_input">
@@ -125,10 +127,10 @@
           </div>
         </div>
 
-        <button type="submit" id="submitBtn" disabled>Войти</button>
+        <button type="submit" id="submitBtn" disabled>Создать аккаунт</button>
       </form>
       <div class="toggle_auth">
-        <p>Еще нет аккаунта? <a href="./auth.html">Создать аккаунт</a></p>
+        <p>Уже есть аккаунт? <a href="./login.html">Войти</a></p>
       </div>
       <div class="login_line"></div>
       <div class="login_privacy">

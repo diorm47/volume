@@ -212,4 +212,8 @@
     flex-direction: column;
     gap: 40px;
   }
+  .about_main_text_wrapper p {
+    font-size: 13px;
+    line-height: 22px;
+  }
 }

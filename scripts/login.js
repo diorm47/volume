@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", function () {
   };
   username.addEventListener("blur", () => {
     if (!validateEmail(username.value)) {
-      error_email.textContent = "Непрвильный email";
+      error_email.textContent = "Неправильный email";
       submitBtn.disabled = true;
       username.classList.add("error_input");
     } else {

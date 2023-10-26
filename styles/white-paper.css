@@ -11,7 +11,7 @@
   position: relative;
   justify-content: space-between;
   padding-bottom: 100px;
-  padding-top: 48px;
+
 }
 .white_paper_content_wrapper {
   background: var(--BgSecond, #f0f2f2);
@@ -20,10 +20,12 @@
   width: 380px;
   position: sticky;
   top: 0;
+  padding-top: 48px;
 }
 
 .white_paper_right_content {
   width: 570px;
+  padding-top: 48px;
 }
 .white_paper_left_menu p {
   color: #05061f;
@@ -223,5 +225,8 @@
     font-style: normal;
     font-weight: 820;
     line-height: 32px; /* 96.97% */
+  }
+  .white_paper_right_content {
+    padding-top: 0;
   }
 }
