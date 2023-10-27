@@ -124,8 +124,11 @@
 .login_input svg {
   cursor: pointer;
   position: absolute;
-  top: 10px;
+  top: 12px;
   right: 10px;
+}
+.visible_password {
+  top: 14px !important;
 }
 #error,
 .error_email {

@@ -736,7 +736,7 @@ input[type="range"]:active::-moz-range-progress {
   color: #000;
 }
 
-.start_now {
+.start_now a {
   border-radius: 32px;
   border: 1px solid var(--OnSecond, #fff);
   opacity: 0.8;

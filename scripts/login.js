@@ -56,3 +56,64 @@ document.addEventListener("DOMContentLoaded", function () {
     e.preventDefault();
   });
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+  const inputFields = document.querySelectorAll(
+    '.login_input input[type="text"], .login_input input[type="email"]'
+  );
+
+  inputFields.forEach((input) => {
+    const clearIcon = input.nextElementSibling;
+
+    // Скрыть иконку при инициализации
+    clearIcon.style.display = "none";
+
+    // Показать иконку, если поле не пустое
+    input.addEventListener("input", () => {
+      clearIcon.style.display = input.value ? "block" : "none";
+    });
+
+    // Очистить поле при клике на иконку
+    clearIcon.addEventListener("click", () => {
+      input.value = "";
+      clearIcon.style.display = "none";
+    });
+  });
+});
+
+document.addEventListener("DOMContentLoaded", function() {
+  const passwordFields = document.querySelectorAll('.login_input input[type="password"]');
+
+  passwordFields.forEach(input => {
+    const toggleIcon = input.nextElementSibling;
+    const visibleIcon = toggleIcon.nextElementSibling;
+
+    // Скрыть иконки при инициализации
+    toggleIcon.style.display = "none";
+    visibleIcon.style.display = "none";
+    
+    // Показать иконку, если поле не пустое
+    input.addEventListener("input", () => {
+      const displayStatus = input.value ? "block" : "none";
+      if(input.type === "password") {
+        toggleIcon.style.display = displayStatus;
+      } else {
+        visibleIcon.style.display = displayStatus;
+      }
+    });
+
+    // Переключение видимости пароля
+    toggleIcon.addEventListener("click", () => {
+      input.type = "text";
+      toggleIcon.style.display = "none";
+      visibleIcon.style.display = "block";
+    });
+
+    visibleIcon.addEventListener("click", () => {
+      input.type = "password";
+      visibleIcon.style.display = "none";
+      toggleIcon.style.display = "block";
+    });
+  });
+});
+  
