@@ -669,7 +669,7 @@ input[type="range"]:active::-moz-range-progress {
 }
 .roadmap .block_name h3,
 .roadmap .block_title h2,
-.questions .block_title h2 {
+.questions .block_title h2, .questions .block_name h3{
   color: #fff;
 }
 
