@@ -57,7 +57,6 @@
   font-style: normal;
   font-weight: 400;
   line-height: 17px; /* 130.769% */
-
 }
 
 .set_password_rules li {
@@ -67,17 +66,16 @@
   gap: 10px;
   margin-bottom: 5px;
 }
-.set_password_rules p:first-child{
+.set_password_rules p:first-child {
   margin-bottom: 7px;
 }
-.set_password_rules
-.password_ok {
+.set_password_rules .password_ok {
   display: none;
 }
-.complete .password_ok{
+.complete .password_ok {
   display: flex;
 }
-.complete .password_error{
+.complete .password_error {
   display: none;
 }
 
@@ -86,4 +84,10 @@
 }
 .set_password_rules {
   margin-bottom: 22px;
+}
+
+@media only screen and (max-width: 500px) {
+  .fillcode_inputs {
+    width: 100%;
+  }
 }
