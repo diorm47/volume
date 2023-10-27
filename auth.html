@@ -74,61 +74,246 @@
       </div>
     </nav>
     <div class="login_page">
-      <div class="login_title">
-        <h2>Регистрация</h2>
-      </div>
-      <form id="loginForm">
-        <div>
-          <div class="login_input_titles">
-            <p>Электронная почта</p>
-          </div>
-          <div class="login_input">
-            <input type="email" id="username" />
-            <svg
-              id="clearUsername"
-              xmlns="http://www.w3.org/2000/svg"
-              width="18"
-              height="18"
-              viewBox="0 0 18 18"
-              fill="none"
-            >
-              <path
-                d="M9 15C5.6925 15 3 12.3075 3 9C3 5.6925 5.6925 3 9 3C12.3075 3 15 5.6925 15 9C15 12.3075 12.3075 15 9 15ZM9 1.5C4.8525 1.5 1.5 4.8525 1.5 9C1.5 13.1475 4.8525 16.5 9 16.5C13.1475 16.5 16.5 13.1475 16.5 9C16.5 4.8525 13.1475 1.5 9 1.5ZM10.9425 6L9 7.9425L7.0575 6L6 7.0575L7.9425 9L6 10.9425L7.0575 12L9 10.0575L10.9425 12L12 10.9425L10.0575 9L12 7.0575L10.9425 6Z"
-                fill="#EAEAEA"
-              />
-            </svg>
-            <div class="error_email"></div>
-          </div>
+      <div class="auth_section auth_input" style="display: block">
+        <div class="login_title">
+          <h2>Регистрация</h2>
         </div>
-        <div>
-          <div class="login_input_titles">
-            <p>Реферальный код (необязательно)</p>
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                <path d="M7 10L12 15L17 10" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        <div id="loginForm" class="authForm">
+          <div>
+            <div class="login_input_titles">
+              <p>Электронная почта</p>
+            </div>
+            <div class="login_input">
+              <input type="email" id="username" class="auth_user_email" onchange="userEmail()" />
+              <svg
+                id="clearUsername"
+                xmlns="http://www.w3.org/2000/svg"
+                width="18"
+                height="18"
+                viewBox="0 0 18 18"
+                fill="none"
+              >
+                <path
+                  d="M9 15C5.6925 15 3 12.3075 3 9C3 5.6925 5.6925 3 9 3C12.3075 3 15 5.6925 15 9C15 12.3075 12.3075 15 9 15ZM9 1.5C4.8525 1.5 1.5 4.8525 1.5 9C1.5 13.1475 4.8525 16.5 9 16.5C13.1475 16.5 16.5 13.1475 16.5 9C16.5 4.8525 13.1475 1.5 9 1.5ZM10.9425 6L9 7.9425L7.0575 6L6 7.0575L7.9425 9L6 10.9425L7.0575 12L9 10.0575L10.9425 12L12 10.9425L10.0575 9L12 7.0575L10.9425 6Z"
+                  fill="#EAEAEA"
+                />
               </svg>
+              <div class="error_email"></div>
+            </div>
+          </div>
+          <div id="referal_block" class="hidden_referal">
+            <div class="login_input_titles">
+              <p>Реферальный код (необязательно)</p>
+              <svg
+                onclick="toggleReferal()"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+              >
+                <path
+                  d="M7 10L12 15L17 10"
+                  stroke="black"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </div>
+
+            <div class="login_input">
+              <input type="text" id="referal" />
+            </div>
           </div>
 
-          <div class="login_input">
-            <input type="password" id="password" />
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              id="togglePassword"
-              width="18"
-              height="18"
-              viewBox="0 0 18 18"
-              fill="none"
-            >
-              <path
-                d="M1.5 3.9525L2.46 3L15 15.54L14.0475 16.5L11.7375 14.19C10.875 14.475 9.96 14.625 9 14.625C5.25 14.625 2.0475 12.2925 0.75 9C1.2675 7.68 2.0925 6.5175 3.1425 5.595L1.5 3.9525ZM9 6.75C9.59674 6.75 10.169 6.98705 10.591 7.40901C11.0129 7.83097 11.25 8.40326 11.25 9C11.2504 9.25542 11.2073 9.50905 11.1225 9.75L8.25 6.8775C8.49095 6.79274 8.74458 6.74962 9 6.75ZM9 3.375C12.75 3.375 15.9525 5.7075 17.25 9C16.6379 10.5549 15.5977 11.9045 14.25 12.8925L13.185 11.82C14.2222 11.1025 15.0587 10.1318 15.615 9C15.0087 7.76245 14.0673 6.71983 12.898 5.99063C11.7286 5.26143 10.3781 4.87491 9 4.875C8.1825 4.875 7.38 5.01 6.63 5.25L5.475 4.1025C6.555 3.6375 7.7475 3.375 9 3.375ZM2.385 9C2.99133 10.2375 3.93268 11.2802 5.10205 12.0094C6.27142 12.7386 7.6219 13.1251 9 13.125C9.5175 13.125 10.0275 13.0725 10.5 12.9675L8.79 11.25C8.26812 11.1941 7.78112 10.9612 7.40998 10.59C7.03884 10.2189 6.80594 9.73188 6.75 9.21L4.2 6.6525C3.4575 7.29 2.835 8.085 2.385 9Z"
-                fill="#EAEAEA"
-              />
-            </svg>
-            <div id="error"></div>
-          </div>
+          <button id="submitBtn" onclick="getCode()" disabled>
+            Создать аккаунт
+          </button>
         </div>
+      </div>
 
-        <button type="submit" id="submitBtn" disabled>Создать аккаунт</button>
-      </form>
+      <div class="auth_section fill_code">
+        <div class="login_title">
+          <h2>Введите код</h2>
+          <p>Мы отправили код на <span class="sending_email"></span></p>
+        </div>
+        <div id="otp" class="fillcode_inputs">
+          <input
+            class="text-center form-control"
+            type="password"
+            id="digit-1"
+            name="digit-1"
+            data-next="digit-2"
+            maxlength="1"
+          />
+          <input
+            class="text-center form-control"
+            type="password"
+            id="digit-2"
+            name="digit-2"
+            data-next="digit-3"
+            data-previous="digit-1"
+            maxlength="1"
+          />
+          <input
+            class="text-center form-control"
+            type="password"
+            id="digit-3"
+            name="digit-3"
+            data-next="digit-4"
+            data-previous="digit-2"
+            maxlength="1"
+          />
+          <input
+            class="text-center form-control"
+            type="password"
+            id="digit-4"
+            name="digit-4"
+            data-next="digit-5"
+            data-previous="digit-3"
+            maxlength="1"
+          />
+          <input
+            class="text-center form-control"
+            type="password"
+            id="digit-5"
+            name="digit-5"
+            data-next="digit-6"
+            data-previous="digit-4"
+            maxlength="1"
+          />
+          <input
+            class="text-center form-control"
+            type="password"
+            id="digit-6"
+            name="digit-6"
+            data-previous="digit-5"
+            maxlength="1"
+          />
+        </div>
+        <div class="getcode_timer">
+          <p>Отправить повторно (5:00)</p>
+        </div>
+        <button id="submitBtn" class="fill_code_svm" onclick="setPassword()" disabled>
+          Проверить
+        </button>
+      </div>
+
+      <div class="auth_section set_password">
+        <div class="login_title">
+          <h2>Создать пароль</h2>
+        </div>
+        <div class="login_form_temp">
+          <div class="login_input_titles">
+            <p>Пароль</p>
+          </div>
+          <div class="login_input mb_10px">
+            <input type="password" id="password" name="password" />
+          </div>
+          <ul class="set_password_rules">
+            <p>Ваш пароль должен содержать:</p>
+            <li id="eight-plus">
+              <img
+                src="./assets/icons/password_ok.svg"
+                class="password_ok"
+                alt=""
+              />
+              <img
+                src="./assets/icons/password_error.svg"
+                class="password_error"
+                alt=""
+              />
+              <p>Длина 8-32 символа</p>
+            </li>
+            <li id="uppercase">
+              <img
+                src="./assets/icons/password_ok.svg"
+                class="password_ok"
+                alt=""
+              />
+              <img
+                src="./assets/icons/password_error.svg"
+                class="password_error"
+                alt=""
+              />
+              <p>1 символ верхнего регистра</p>
+            </li>
+            <li id="lowercase">
+              <img
+                src="./assets/icons/password_ok.svg"
+                class="password_ok"
+                alt=""
+              />
+              <img
+                src="./assets/icons/password_error.svg"
+                class="password_error"
+                alt=""
+              />
+              <p>1 символ нижнего регистра</p>
+            </li>
+            <li id="numbers">
+              <img
+                src="./assets/icons/password_ok.svg"
+                class="password_ok"
+                alt=""
+              />
+              <img
+                src="./assets/icons/password_error.svg"
+                class="password_error"
+                alt=""
+              />
+              <p>1 цифра</p>
+            </li>
+          </ul>
+          <div class="login_input_titles">
+            <p>Пароль ещё раз</p>
+          </div>
+          <div class="login_input">
+            <input type="password" id="verify-password" name="password" />
+          </div>
+          <button
+            id="submitBtn"
+            class="verify-password-submit"
+            onclick="setUserData()"
+            disabled
+          >
+            Далее
+          </button>
+        </div>
+      </div>
+
+      <div class="auth_section iser_datas" >
+        <div class="login_title">
+          <h2>Введите данные</h2>
+        </div>
+        <form id="loginForm" class="authForm">
+          <div>
+            <div class="login_input_titles">
+              <p>Имя</p>
+            </div>
+            <div class="login_input">
+              <input type="email" id="userrealname" />
+
+              <div class="error_email"></div>
+            </div>
+          </div>
+          <div>
+            <div class="login_input_titles">
+              <p>Фамилия</p>
+            </div>
+
+            <div class="login_input">
+              <input type="text" id="userlastname" />
+            </div>
+          </div>
+
+          <button id="submitBtn" class="last_auth_btn" disabled>
+            Создать аккаунт
+          </button>
+        </form>
+      </div>
+
       <div class="toggle_auth">
         <p>Уже есть аккаунт? <a href="./login.html">Войти</a></p>
       </div>
@@ -141,7 +326,8 @@
         </p>
       </div>
     </div>
-    <script src="./scripts/login.js"></script>
+
+    <script src="./scripts/auth.js"></script>
     <script>
       const nav_wrapper = document.querySelector(".nav_wrapper");
       const toggleMob = () => {

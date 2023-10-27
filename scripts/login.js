@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const submitBtn = document.getElementById("submitBtn");
   const clearUsernameIcon = document.getElementById("clearUsername");
   const togglePasswordIcon = document.getElementById("togglePassword");
- console.log(error_email);
+
   const validateEmail = (email) => {
     const re = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
     return re.test(String(email).toLowerCase());
@@ -35,7 +35,7 @@ document.addEventListener("DOMContentLoaded", function () {
     togglePasswordIcon.style.display = password.value ? "block" : "none";
     checkButtonState();
   });
-  
+
   togglePassword.addEventListener("click", () => {
     password.type = password.type === "password" ? "text" : "password";
   });
@@ -51,7 +51,6 @@ document.addEventListener("DOMContentLoaded", function () {
       password.classList.remove("error_input");
     }
   });
-
 
   document.getElementById("loginForm").addEventListener("submit", (e) => {
     e.preventDefault();

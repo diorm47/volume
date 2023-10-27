@@ -1,0 +1,89 @@
+.hidden_referal input {
+  display: none;
+}
+.hidden_referal svg {
+  transform: rotate(180deg);
+}
+#referal_block svg {
+  cursor: pointer;
+}
+.auth_section {
+  display: none;
+}
+
+.fillcode_inputs {
+  width: 480px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 22px;
+}
+.fillcode_inputs input {
+  width: 40px;
+  height: 44px;
+  border-radius: 4px;
+  border: 1px solid #eaeaea;
+  text-align: center;
+}
+
+.fill_code .login_title h2 {
+  margin-bottom: 22px;
+}
+.fill_code .login_title p {
+  color: #000;
+  font-family: TTInterfaces400;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 17px; /* 130.769% */
+  margin-bottom: 32px;
+}
+
+.getcode_timer p {
+  color: #bdbdbf;
+  font-family: TTInterfaces600;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 17px; /* 130.769% */
+  text-align: right;
+  margin-bottom: 32px;
+}
+.set_password_rules p,
+.set_password_rules li {
+  color: #111112;
+  font-family: TTInterfaces400;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 17px; /* 130.769% */
+
+}
+
+.set_password_rules li {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 5px;
+}
+.set_password_rules p:first-child{
+  margin-bottom: 7px;
+}
+.set_password_rules
+.password_ok {
+  display: none;
+}
+.complete .password_ok{
+  display: flex;
+}
+.complete .password_error{
+  display: none;
+}
+
+.mb_10px {
+  margin-bottom: 10px;
+}
+.set_password_rules {
+  margin-bottom: 22px;
+}

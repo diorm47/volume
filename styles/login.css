@@ -26,7 +26,20 @@
   font-weight: 400;
   line-height: 17px; /* 100% */
 }
-#loginForm input {
+.reset_text {
+  color: #000;
+  font-family: TTInterfaces400;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 17px; /* 100% */
+  margin-bottom: 32px;
+}
+.reset_section {
+  display: none;
+}
+#loginForm input,
+.login_form_temp input {
   width: 100%;
   border-radius: 5px;
   border: 1px solid #eaeaea;
@@ -51,7 +64,6 @@
   font-style: normal;
   font-weight: 400;
   line-height: 17px; /* 100% */
-
 }
 #submitBtn {
   height: 60px;
@@ -115,7 +127,8 @@
   top: 10px;
   right: 10px;
 }
-#error, .error_email {
+#error,
+.error_email {
   color: #f1507b;
   font-family: TTInterfaces400;
   font-size: 13px;

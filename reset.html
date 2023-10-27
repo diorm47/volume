@@ -74,39 +74,202 @@
       </div>
     </nav>
     <div class="login_page">
-      <div class="login_title">
-        <h2>Сбросить пароль</h2>
+      <div class="reset_section reset_username_section" style="display: block;">
+        <div class="login_title">
+          <h2>Сбросить пароль</h2>
+        </div>
+        <div id="loginForm">
+          <div>
+            <div class="login_input_titles">
+              <p>Электронная почта</p>
+            </div>
+            <div class="login_input">
+              <input type="email" id="resetusername" onchange="userEmail()" />
+              <svg
+                id="clearUsername"
+                xmlns="http://www.w3.org/2000/svg"
+                width="18"
+                height="18"
+                viewBox="0 0 18 18"
+                fill="none"
+              >
+                <path
+                  d="M9 15C5.6925 15 3 12.3075 3 9C3 5.6925 5.6925 3 9 3C12.3075 3 15 5.6925 15 9C15 12.3075 12.3075 15 9 15ZM9 1.5C4.8525 1.5 1.5 4.8525 1.5 9C1.5 13.1475 4.8525 16.5 9 16.5C13.1475 16.5 16.5 13.1475 16.5 9C16.5 4.8525 13.1475 1.5 9 1.5ZM10.9425 6L9 7.9425L7.0575 6L6 7.0575L7.9425 9L6 10.9425L7.0575 12L9 10.0575L10.9425 12L12 10.9425L10.0575 9L12 7.0575L10.9425 6Z"
+                  fill="#EAEAEA"
+                />
+              </svg>
+              <div class="error_email"></div>
+            </div>
+          </div>
+
+          <button type="submit" id="submitBtn" class="resetEmailbtn" onclick="getCode()" disabled>
+            Получить код подтверждения
+          </button>
+        </div>
       </div>
-      <form id="loginForm">
-        <div>
+
+      <div class="reset_section fill_code">
+        <div class="login_title">
+          <h2>Введите код</h2>
+          <p>Мы отправили код на <span class="sending_email"></span></p>
+        </div>
+        <div id="otp" class="fillcode_inputs">
+          <input
+            class="text-center form-control"
+            type="password"
+            id="digit-1"
+            name="digit-1"
+            data-next="digit-2"
+            maxlength="1"
+          />
+          <input
+            class="text-center form-control"
+            type="password"
+            id="digit-2"
+            name="digit-2"
+            data-next="digit-3"
+            data-previous="digit-1"
+            maxlength="1"
+          />
+          <input
+            class="text-center form-control"
+            type="password"
+            id="digit-3"
+            name="digit-3"
+            data-next="digit-4"
+            data-previous="digit-2"
+            maxlength="1"
+          />
+          <input
+            class="text-center form-control"
+            type="password"
+            id="digit-4"
+            name="digit-4"
+            data-next="digit-5"
+            data-previous="digit-3"
+            maxlength="1"
+          />
+          <input
+            class="text-center form-control"
+            type="password"
+            id="digit-5"
+            name="digit-5"
+            data-next="digit-6"
+            data-previous="digit-4"
+            maxlength="1"
+          />
+          <input
+            class="text-center form-control"
+            type="password"
+            id="digit-6"
+            name="digit-6"
+            data-previous="digit-5"
+            maxlength="1"
+          />
+        </div>
+        <div class="getcode_timer">
+          <p>Отправить повторно (5:00)</p>
+        </div>
+        <button id="submitBtn" class="fill_code_svm" onclick="setPasswordReset()" disabled>
+          Проверить
+        </button>
+      </div>
+
+      <div class="reset_section set_password">
+        <div class="login_title">
+          <h2>Создать пароль</h2>
+        </div>
+        <div class="login_form_temp">
           <div class="login_input_titles">
-            <p>Электронная почта</p>
+            <p>Пароль</p>
+          </div>
+          <div class="login_input mb_10px">
+            <input type="password" id="password" name="password" />
+          </div>
+          <ul class="set_password_rules">
+            <p>Ваш пароль должен содержать:</p>
+            <li id="eight-plus">
+              <img
+                src="./assets/icons/password_ok.svg"
+                class="password_ok"
+                alt=""
+              />
+              <img
+                src="./assets/icons/password_error.svg"
+                class="password_error"
+                alt=""
+              />
+              <p>Длина 8-32 символа</p>
+            </li>
+            <li id="uppercase">
+              <img
+                src="./assets/icons/password_ok.svg"
+                class="password_ok"
+                alt=""
+              />
+              <img
+                src="./assets/icons/password_error.svg"
+                class="password_error"
+                alt=""
+              />
+              <p>1 символ верхнего регистра</p>
+            </li>
+            <li id="lowercase">
+              <img
+                src="./assets/icons/password_ok.svg"
+                class="password_ok"
+                alt=""
+              />
+              <img
+                src="./assets/icons/password_error.svg"
+                class="password_error"
+                alt=""
+              />
+              <p>1 символ нижнего регистра</p>
+            </li>
+            <li id="numbers">
+              <img
+                src="./assets/icons/password_ok.svg"
+                class="password_ok"
+                alt=""
+              />
+              <img
+                src="./assets/icons/password_error.svg"
+                class="password_error"
+                alt=""
+              />
+              <p>1 цифра</p>
+            </li>
+          </ul>
+          <div class="login_input_titles">
+            <p>Пароль ещё раз</p>
           </div>
           <div class="login_input">
-            <input type="email" id="username" />
-            <svg
-              id="clearUsername"
-              xmlns="http://www.w3.org/2000/svg"
-              width="18"
-              height="18"
-              viewBox="0 0 18 18"
-              fill="none"
-            >
-              <path
-                d="M9 15C5.6925 15 3 12.3075 3 9C3 5.6925 5.6925 3 9 3C12.3075 3 15 5.6925 15 9C15 12.3075 12.3075 15 9 15ZM9 1.5C4.8525 1.5 1.5 4.8525 1.5 9C1.5 13.1475 4.8525 16.5 9 16.5C13.1475 16.5 16.5 13.1475 16.5 9C16.5 4.8525 13.1475 1.5 9 1.5ZM10.9425 6L9 7.9425L7.0575 6L6 7.0575L7.9425 9L6 10.9425L7.0575 12L9 10.0575L10.9425 12L12 10.9425L10.0575 9L12 7.0575L10.9425 6Z"
-                fill="#EAEAEA"
-              />
-            </svg>
-            <div class="error_email"></div>
+            <input type="password" id="verify-password" name="password" />
           </div>
+          <button
+            id="submitBtn"
+            class="verify-password-submit"
+            onclick="endReset()"
+            disabled
+          >
+            Далее
+          </button>
         </div>
- 
+      </div>
 
-        <button type="submit" id="submitBtn" disabled>Получить код подтверждения</button>
-      </form>
-   
+      <div class="reset_section reset_username_block">
+        <div class="login_title">
+          <h2>Пароль изменен</h2>
+        </div>
+        <p class="reset_text">Ваш пароль успешно изменен</p>
+        <a href="./login.html">
+          <button type="submit" id="submitBtn">Войти</button></a
+        >
+      </div>
     </div>
-    <script src="./scripts/login.js"></script>
+    <script src="./scripts/reset.js"></script>
+
     <script>
       const nav_wrapper = document.querySelector(".nav_wrapper");
       const toggleMob = () => {
