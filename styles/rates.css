@@ -119,6 +119,9 @@
   align-items: center;
   justify-content: center;
 }
+.rates_header_btn button {
+  padding: 18px 28px;
+}
 .rates_content_wrapper {
   background: var(--BgSecond, #f0f2f2);
 }
