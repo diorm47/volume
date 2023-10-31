@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Войти | &Volume</title>
+    <title>Log in | &Volume</title>
     <link rel="stylesheet" href="../styles/main.css" />
     <link rel="icon" href="../favicon/favicon.ico" />
     <link rel="apple-touch-icon" href="../favicon/android-chrome-192x192.png" />
@@ -79,12 +79,12 @@
     </nav>
     <div class="login_page">
       <div class="login_title">
-        <h2>Войти</h2>
+        <h2>LOGIN</h2>
       </div>
       <form id="loginForm">
         <div>
           <div class="login_input_titles">
-            <p>Электронная почта</p>
+            <p>Email</p>
           </div>
           <div class="login_input">
             <input type="email" id="username" />
@@ -106,8 +106,10 @@
         </div>
         <div>
           <div class="login_input_titles">
-            <p>Пароль</p>
-            <a class="recovery_password" href="./reset.html">Забыли пароль?</a>
+            <p>Password</p>
+            <a class="recovery_password" href="./reset.html"
+              >Forgot your password?</a
+            >
           </div>
 
           <div class="login_input">
@@ -126,33 +128,170 @@
                 fill="#EAEAEA"
               />
             </svg>
-            <svg class="visible_password" xmlns="http://www.w3.org/2000/svg" width="20" height="14" viewBox="0 0 20 14" fill="none">
-              <path fill-rule="evenodd" clip-rule="evenodd" d="M2 7.001V7C2.003 6.984 2.017 6.896 2.095 6.723C2.181 6.532 2.32 6.292 2.519 6.015C2.917 5.462 3.512 4.823 4.264 4.217C5.777 2.996 7.812 2 10 2C12.188 2 14.223 2.996 15.736 4.216C16.488 4.822 17.083 5.461 17.481 6.014C17.681 6.291 17.819 6.531 17.905 6.722C17.983 6.895 17.997 6.983 18 6.999V7C17.997 7.016 17.983 7.104 17.905 7.277C17.787 7.52619 17.645 7.76331 17.481 7.985C17.083 8.538 16.488 9.177 15.736 9.783C14.224 11.004 12.188 12 10 12C7.812 12 5.777 11.004 4.264 9.784C3.512 9.178 2.917 8.539 2.519 7.986C2.35491 7.7644 2.2129 7.52727 2.095 7.278C2.05129 7.19024 2.01935 7.09711 2 7.001ZM10 0C7.217 0 4.752 1.254 3.009 2.659C2.132 3.365 1.409 4.133 0.896 4.846C0.653079 5.17599 0.443708 5.52941 0.271 5.901C0.123 6.23 0 6.611 0 7C0 7.388 0.123 7.771 0.27 8.099C0.425 8.441 0.64 8.799 0.896 9.154C1.409 9.867 2.132 10.634 3.009 11.341C4.752 12.746 7.217 14 10 14C12.783 14 15.248 12.746 16.991 11.341C17.868 10.635 18.591 9.867 19.104 9.154C19.361 8.798 19.575 8.441 19.729 8.099C19.877 7.771 20 7.389 20 7C20 6.612 19.877 6.229 19.73 5.901C19.5567 5.52949 19.347 5.1761 19.104 4.846C18.591 4.133 17.868 3.366 16.991 2.659C15.248 1.254 12.783 0 10 0ZM9 7C9 6.73478 9.10536 6.48043 9.29289 6.29289C9.48043 6.10536 9.73478 6 10 6C10.2652 6 10.5196 6.10536 10.7071 6.29289C10.8946 6.48043 11 6.73478 11 7C11 7.26522 10.8946 7.51957 10.7071 7.70711C10.5196 7.89464 10.2652 8 10 8C9.73478 8 9.48043 7.89464 9.29289 7.70711C9.10536 7.51957 9 7.26522 9 7ZM10 4C9.20435 4 8.44129 4.31607 7.87868 4.87868C7.31607 5.44129 7 6.20435 7 7C7 7.79565 7.31607 8.55871 7.87868 9.12132C8.44129 9.68393 9.20435 10 10 10C10.7956 10 11.5587 9.68393 12.1213 9.12132C12.6839 8.55871 13 7.79565 13 7C13 6.20435 12.6839 5.44129 12.1213 4.87868C11.5587 4.31607 10.7956 4 10 4Z" fill="black"/>
+            <svg
+              class="visible_password"
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="14"
+              viewBox="0 0 20 14"
+              fill="none"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M2 7.001V7C2.003 6.984 2.017 6.896 2.095 6.723C2.181 6.532 2.32 6.292 2.519 6.015C2.917 5.462 3.512 4.823 4.264 4.217C5.777 2.996 7.812 2 10 2C12.188 2 14.223 2.996 15.736 4.216C16.488 4.822 17.083 5.461 17.481 6.014C17.681 6.291 17.819 6.531 17.905 6.722C17.983 6.895 17.997 6.983 18 6.999V7C17.997 7.016 17.983 7.104 17.905 7.277C17.787 7.52619 17.645 7.76331 17.481 7.985C17.083 8.538 16.488 9.177 15.736 9.783C14.224 11.004 12.188 12 10 12C7.812 12 5.777 11.004 4.264 9.784C3.512 9.178 2.917 8.539 2.519 7.986C2.35491 7.7644 2.2129 7.52727 2.095 7.278C2.05129 7.19024 2.01935 7.09711 2 7.001ZM10 0C7.217 0 4.752 1.254 3.009 2.659C2.132 3.365 1.409 4.133 0.896 4.846C0.653079 5.17599 0.443708 5.52941 0.271 5.901C0.123 6.23 0 6.611 0 7C0 7.388 0.123 7.771 0.27 8.099C0.425 8.441 0.64 8.799 0.896 9.154C1.409 9.867 2.132 10.634 3.009 11.341C4.752 12.746 7.217 14 10 14C12.783 14 15.248 12.746 16.991 11.341C17.868 10.635 18.591 9.867 19.104 9.154C19.361 8.798 19.575 8.441 19.729 8.099C19.877 7.771 20 7.389 20 7C20 6.612 19.877 6.229 19.73 5.901C19.5567 5.52949 19.347 5.1761 19.104 4.846C18.591 4.133 17.868 3.366 16.991 2.659C15.248 1.254 12.783 0 10 0ZM9 7C9 6.73478 9.10536 6.48043 9.29289 6.29289C9.48043 6.10536 9.73478 6 10 6C10.2652 6 10.5196 6.10536 10.7071 6.29289C10.8946 6.48043 11 6.73478 11 7C11 7.26522 10.8946 7.51957 10.7071 7.70711C10.5196 7.89464 10.2652 8 10 8C9.73478 8 9.48043 7.89464 9.29289 7.70711C9.10536 7.51957 9 7.26522 9 7ZM10 4C9.20435 4 8.44129 4.31607 7.87868 4.87868C7.31607 5.44129 7 6.20435 7 7C7 7.79565 7.31607 8.55871 7.87868 9.12132C8.44129 9.68393 9.20435 10 10 10C10.7956 10 11.5587 9.68393 12.1213 9.12132C12.6839 8.55871 13 7.79565 13 7C13 6.20435 12.6839 5.44129 12.1213 4.87868C11.5587 4.31607 10.7956 4 10 4Z"
+                fill="black"
+              />
             </svg>
             <div id="error"></div>
           </div>
         </div>
 
-        <button type="submit" id="submitBtn" disabled>Войти</button>
+        <button type="submit" id="submitBtn" disabled>Log in</button>
       </form>
       <div class="toggle_auth">
-        <p>Еще нет аккаунта? <a href="./auth.html">Создать аккаунт</a></p>
+        <p>
+          Don't have an account yet? <a href="./auth.html">Create an account</a>
+        </p>
       </div>
       <div class="login_line"></div>
       <div class="login_privacy">
         <p>
-          Продолжая регистрацию или вход, вы принимаете условия <br />
-          <a href="./agreement.html">Пользовательского соглашения</a> и
-          <a href="./policy.html">Политики конфиденциальности.</a>
+          By continuing to register or login, you accept the terms and
+          conditions <br />
+          <a href="./agreement.html">User Agreement </a> and
+          <a href="./policy.html">Privacy Policy.</a>
         </p>
       </div>
     </div>
-    <script src="../scripts/login.js"></script>
+
     <script>
       const nav_wrapper = document.querySelector(".nav_wrapper");
       const toggleMob = () => {
         nav_wrapper.classList.toggle("mob_menu");
       };
+
+      document.addEventListener("DOMContentLoaded", function () {
+        const username = document.getElementById("username");
+        const password = document.getElementById("password");
+        const clearUsername = document.getElementById("clearUsername");
+        const togglePassword = document.getElementById("togglePassword");
+        const error = document.getElementById("error");
+        const error_email = document.querySelector(".error_email");
+        const submitBtn = document.getElementById("submitBtn");
+        const clearUsernameIcon = document.getElementById("clearUsername");
+        const togglePasswordIcon = document.getElementById("togglePassword");
+
+        const validateEmail = (email) => {
+          const re = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+          return re.test(String(email).toLowerCase());
+        };
+        clearUsername.addEventListener("click", () => {
+          username.value = "";
+        });
+        const checkButtonState = () => {
+          submitBtn.disabled = !(username.value && password.value.length >= 8);
+        };
+        username.addEventListener("blur", () => {
+          if (!validateEmail(username.value)) {
+            error_email.textContent = "Incorrect email";
+            submitBtn.disabled = true;
+            username.classList.add("error_input");
+          } else {
+            error_email.textContent = "";
+            submitBtn.disabled = false;
+            username.classList.remove("error_input");
+          }
+          checkButtonState();
+        });
+        password.addEventListener("input", () => {
+          togglePasswordIcon.style.display = password.value ? "block" : "none";
+          checkButtonState();
+        });
+
+        togglePassword.addEventListener("click", () => {
+          password.type = password.type === "password" ? "text" : "password";
+        });
+
+        password.addEventListener("blur", () => {
+          if (password.value.length < 8) {
+            error.textContent =
+              "Enter a password between 8 and 32 characters long";
+            submitBtn.disabled = true;
+            password.classList.add("error_input");
+          } else {
+            error.textContent = "";
+            submitBtn.disabled = false;
+            password.classList.remove("error_input");
+          }
+        });
+
+        document.getElementById("loginForm").addEventListener("submit", (e) => {
+          e.preventDefault();
+        });
+      });
+
+      document.addEventListener("DOMContentLoaded", function () {
+        const inputFields = document.querySelectorAll(
+          '.login_input input[type="text"], .login_input input[type="email"]'
+        );
+
+        inputFields.forEach((input) => {
+          const clearIcon = input.nextElementSibling;
+
+          // Скрыть иконку при инициализации
+          clearIcon.style.display = "none";
+
+          // Показать иконку, если поле не пустое
+          input.addEventListener("input", () => {
+            clearIcon.style.display = input.value ? "block" : "none";
+          });
+
+          // Очистить поле при клике на иконку
+          clearIcon.addEventListener("click", () => {
+            input.value = "";
+            clearIcon.style.display = "none";
+          });
+        });
+      });
+
+      document.addEventListener("DOMContentLoaded", function () {
+        const passwordFields = document.querySelectorAll(
+          '.login_input input[type="password"]'
+        );
+
+        passwordFields.forEach((input) => {
+          const toggleIcon = input.nextElementSibling;
+          const visibleIcon = toggleIcon.nextElementSibling;
+
+          // Скрыть иконки при инициализации
+          toggleIcon.style.display = "none";
+          visibleIcon.style.display = "none";
+
+          // Показать иконку, если поле не пустое
+          input.addEventListener("input", () => {
+            const displayStatus = input.value ? "block" : "none";
+            if (input.type === "password") {
+              toggleIcon.style.display = displayStatus;
+            } else {
+              visibleIcon.style.display = displayStatus;
+            }
+          });
+
+          // Переключение видимости пароля
+          toggleIcon.addEventListener("click", () => {
+            input.type = "text";
+            toggleIcon.style.display = "none";
+            visibleIcon.style.display = "block";
+          });
+
+          visibleIcon.addEventListener("click", () => {
+            input.type = "password";
+            visibleIcon.style.display = "none";
+            toggleIcon.style.display = "block";
+          });
+        });
+      });
     </script>
   </body>
 </html>

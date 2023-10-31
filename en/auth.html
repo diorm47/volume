@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Авторизация | &Volume</title>
+    <title>Registration | &Volume</title>
     <link rel="stylesheet" href="../styles/main.css" />
     <link rel="icon" href="../favicon/favicon.ico" />
     <link rel="apple-touch-icon" href="../favicon/android-chrome-192x192.png" />
@@ -80,12 +80,12 @@
     <div class="login_page">
       <div class="auth_section auth_input" style="display: block">
         <div class="login_title">
-          <h2>Регистрация</h2>
+          <h2>Registration</h2>
         </div>
         <div id="loginForm" class="authForm">
           <div>
             <div class="login_input_titles">
-              <p>Электронная почта</p>
+              <p>Email</p>
             </div>
             <div class="login_input">
               <input type="email" id="username" class="auth_user_email" onchange="userEmail()" />
@@ -107,7 +107,7 @@
           </div>
           <div id="referal_block" class="hidden_referal">
             <div class="login_input_titles">
-              <p>Реферальный код (необязательно)</p>
+              <p>Referral code (optional)</p>
               <svg
                 onclick="toggleReferal()"
                 xmlns="http://www.w3.org/2000/svg"
@@ -132,15 +132,15 @@
           </div>
 
           <button id="submitBtn" onclick="getCode()" disabled>
-            Создать аккаунт
+            Create account
           </button>
         </div>
       </div>
 
       <div class="auth_section fill_code">
         <div class="login_title">
-          <h2>Введите код</h2>
-          <p>Мы отправили код на <span class="sending_email"></span></p>
+          <h2>Enter a code</h2>
+          <p>We sent the confirmation code to <span class="sending_email"></span></p>
         </div>
         <div id="otp" class="fillcode_inputs">
           <input
@@ -197,20 +197,20 @@
           />
         </div>
         <div class="getcode_timer">
-          <p>Отправить повторно (5:00)</p>
+          <p>Resend (5:00)</p>
         </div>
         <button id="submitBtn" class="fill_code_svm" onclick="setPassword()" disabled>
-          Проверить
+          Confirm
         </button>
       </div>
 
       <div class="auth_section set_password">
         <div class="login_title">
-          <h2>Создать пароль</h2>
+          <h2>Create a password</h2>
         </div>
         <div class="login_form_temp">
           <div class="login_input_titles">
-            <p>Пароль</p>
+            <p>Password</p>
           </div>
           <div class="login_input mb_10px">
             <input type="password" id="password" name="password" />
@@ -233,7 +233,7 @@
           </svg>
           </div>
           <ul class="set_password_rules">
-            <p>Ваш пароль должен содержать:</p>
+            <p>Your password must contain:</p>
             <li id="eight-plus">
               <img
                 src="../assets/icons/password_ok.svg"
@@ -245,7 +245,7 @@
                 class="password_error"
                 alt=""
               />
-              <p>Длина 8-32 символа</p>
+              <p>Length 8-32 characters</p>
             </li>
             <li id="uppercase">
               <img
@@ -258,7 +258,7 @@
                 class="password_error"
                 alt=""
               />
-              <p>1 символ верхнего регистра</p>
+              <p>1 uppercase character</p>
             </li>
             <li id="lowercase">
               <img
@@ -271,7 +271,7 @@
                 class="password_error"
                 alt=""
               />
-              <p>1 символ нижнего регистра</p>
+              <p>1 lowercase character</p>
             </li>
             <li id="numbers">
               <img
@@ -284,11 +284,11 @@
                 class="password_error"
                 alt=""
               />
-              <p>1 цифра</p>
+              <p>1 digit</p>
             </li>
           </ul>
           <div class="login_input_titles">
-            <p>Пароль ещё раз</p>
+            <p>Confirm password</p>
           </div>
           <div class="login_input">
             <input type="password" id="verify-password" name="password" />
@@ -316,19 +316,19 @@
             onclick="setUserData()"
             disabled
           >
-            Далее
+          Next
           </button>
         </div>
       </div>
 
       <div class="auth_section iser_datas" >
         <div class="login_title">
-          <h2>Введите данные</h2>
+          <h2>Enter your data</h2>
         </div>
         <form id="loginForm" class="authForm">
           <div>
             <div class="login_input_titles">
-              <p>Имя</p>
+              <p>Name </p>
             </div>
             <div class="login_input">
               <input type="text" id="userrealname" />
@@ -350,7 +350,7 @@
           </div>
           <div>
             <div class="login_input_titles">
-              <p>Фамилия</p>
+              <p>Surname</p>
             </div>
 
             <div class="login_input">
@@ -372,20 +372,20 @@
           </div>
 
           <button id="submitBtn" class="last_auth_btn" disabled>
-            Создать аккаунт
+            Create account
           </button>
         </form>
       </div>
 
       <div class="toggle_auth">
-        <p>Уже есть аккаунт? <a href="./login.html">Войти</a></p>
+        <p>Already have an account?  <a href="./login.html">Sign In</a></p>
       </div>
       <div class="login_line"></div>
       <div class="login_privacy">
         <p>
-          Продолжая регистрацию или вход, вы принимаете условия <br />
-          <a href="./agreement.html">Пользовательского соглашения</a> и
-          <a href="./policy.html">Политики конфиденциальности.</a>
+          By continuing to register or login, you accept the terms and conditions <br />
+          <a href="./agreement.html">User Agreement</a> and
+          <a href="./policy.html">Privacy Policy.</a>
         </p>
       </div>
     </div>
