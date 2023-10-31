@@ -1,5 +1,5 @@
 const rangeValue = document.querySelector(".rangeValue");
-const rangeValue2 = document.querySelector(".rangeValue2");
+const rangeValue2 = document.querySelector(".rangeValue2 span");
 const profit_summ = document.querySelector(".profit_summ");
 
 const initFirstValue = parseFloat(
@@ -36,7 +36,7 @@ document.querySelectorAll(".range_box input").forEach((item) => {
 // For the second slider
 document.querySelectorAll(".range_box2 input").forEach((item) => {
   item.addEventListener("input", function () {
-    rangeValue2.innerHTML = `${this.value} мес`;
+    rangeValue2.innerHTML = `${this.value}`;
     rangeData.secondValue = parseFloat(this.value);
     calculate();
   });
