@@ -68,7 +68,7 @@
 #submitBtn {
   height: 60px;
   border-radius: 87px;
-  background: #111112;
+  background: var(--2420FC, #2420fc);
   width: 100%;
   color: #fff;
   font-family: TTInterfaces500;
@@ -76,8 +76,13 @@
   font-style: normal;
   font-weight: 500;
   line-height: 17px; /* 100% */
+  transition: all 0.4s ease;
 }
-
+#submitBtn:hover {
+  transition: all 0.4s ease;
+  opacity: 1 !important;
+  background: rgba(36, 32, 252, 0.80) !important;
+}
 .toggle_auth {
   display: flex;
   align-items: center;
@@ -185,5 +190,4 @@ button:disabled {
   .login_privacy br {
     display: none;
   }
-
 }
