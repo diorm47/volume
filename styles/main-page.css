@@ -249,7 +249,7 @@ section {
 
 .advantage_card_icon {
   border-radius: 16px;
-  background: rgba(36, 32, 252, 0.15);
+  background: rgba(0, 119, 255, 0.15);
   width: 48px;
   height: 48px;
   display: flex;
@@ -327,7 +327,9 @@ section {
   bottom: 0;
   left: 0;
   width: 100%;
+
 }
+
 .profitability .main_content_wrapper {
   position: relative;
   z-index: 11;
@@ -436,7 +438,7 @@ input[type="range"] {
   }
 
   input[type="range"].win10-thumb {
-    color: #3a86ff;
+    color: #0077FF;
   }
 }
 
@@ -495,7 +497,7 @@ input[type="range"]::-webkit-slider-thumb {
 }
 
 input[type="range"]:hover::-webkit-slider-thumb {
-  filter: brightness(var(--brightness-hover));
+ 
   cursor: grab;
 }
 
@@ -535,10 +537,10 @@ input[type="range"]::-moz-range-progress {
   filter: brightness(100%);
 }
 
-input[type="range"]:hover::-moz-range-thumb,
+/* input[type="range"]:hover::-moz-range-thumb,
 input[type="range"]:hover::-moz-range-progress {
   filter: brightness(var(--brightness-hover));
-}
+} */
 
 input[type="range"]:active::-moz-range-thumb,
 input[type="range"]:active::-moz-range-progress {
@@ -705,7 +707,8 @@ input[type="range"]:active::-moz-range-progress {
   border-left: 1px;
   border-style: solid;
 
-  border-image: linear-gradient(to bottom, #5b58ff, #97979733) 1 100%;
+  border-image: linear-gradient(to bottom,  #51A2FF, #97979733) 1 100%;
+
   border-top: none;
   border-right: none;
   border-bottom: none;
