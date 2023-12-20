@@ -32,7 +32,7 @@
 }
 .about_whitepaper {
   padding: 48px 0;
-  background: var(--Accent, #2420fc);
+  background: var(--Accent, #0077FF);
 }
 .about_whitepaper h3 {
   color: var(--OnSecond, #fff);

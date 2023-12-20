@@ -58,7 +58,7 @@
 }
 
 .recovery_password {
-  color: #2420fc;
+  color: #0077FF;
   font-family: TTInterfaces400;
   font-size: 17px;
   font-style: normal;
@@ -68,7 +68,7 @@
 #submitBtn {
   height: 60px;
   border-radius: 87px;
-  background: var(--2420FC, #2420fc);
+  background: var(--0077FF, #0077FF);
   width: 100%;
   color: #fff;
   font-family: TTInterfaces500;
@@ -101,7 +101,7 @@
 
 .toggle_auth a,
 .login_privacy a {
-  color: #2420fc;
+  color: #0077FF;
 }
 
 .login_line {

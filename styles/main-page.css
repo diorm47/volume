@@ -77,7 +77,7 @@ button:hover {
 }
 .nav_button {
   border-radius: 32px;
-  background: #2420fc;
+  background: #0077FF;
   padding: 6px 16px;
   color: #fff;
   font-family: TTInterfaces500;
@@ -114,7 +114,7 @@ button:hover {
 }
 
 .header_content span {
-  color: #2420fc;
+  color: #0077FF;
 }
 .header_button {
   border-radius: 40px;
@@ -150,7 +150,7 @@ button:hover {
   text-transform: uppercase;
 }
 .acoounts_count span {
-  color: #2420fc;
+  color: #0077FF;
 }
 .header_bootom_text {
   color: var(--First, #fff);
@@ -244,7 +244,7 @@ section {
 }
 
 .advantages h2 span {
-  color: var(--Accent, #2420fc);
+  color: var(--Accent, #0077FF);
 }
 
 .advantage_card_icon {
@@ -291,7 +291,7 @@ section {
 .advantage_text {
   padding: 24px 36px;
   border-radius: 24px;
-  border: 1px solid var(--Accent, #2420fc);
+  border: 1px solid var(--Accent, #0077FF);
 }
 
 .advantage_text_wrapper {
@@ -318,7 +318,7 @@ section {
 }
 
 .profitability {
-  background: var(--Accent, #2420fc);
+  background: var(--Accent, #0077FF);
   position: relative;
   overflow: hidden;
 }
@@ -362,7 +362,7 @@ section {
 }
 
 .calc_title span {
-  color: #2420fc;
+  color: #0077FF;
 }
 .profit_calc_wrapper {
   display: flex;
@@ -411,16 +411,16 @@ section {
   appearance: none;
   width: 24px !important;
   height: 24px !important;
-  background: #2420FC;
+  background: #0077FF;
   border-radius: 50%;
-  border: 2px solid #2420FC;
-  box-shadow: -107px 0 0 100px #2420FC;
+  border: 2px solid #0077FF;
+  box-shadow: -107px 0 0 100px #0077FF;
   cursor: pointer;
 } */
 /*  */
 
 input[type="range"] {
-  color: #2420fc;
+  color: #0077FF;
   --thumb-height: 24px;
   --track-height: 4px;
   --track-color: #cac6e4;
@@ -431,7 +431,7 @@ input[type="range"] {
 
 @media (prefers-color-scheme: dark) {
   input[type="range"] {
-    color: #2420fc;
+    color: #0077FF;
     --track-color: #cac6e4;
   }
 
@@ -572,7 +572,7 @@ input[type="range"]:active::-moz-range-progress {
   letter-spacing: 0.13px;
 }
 .profit_calc_summ_text a {
-  color: #2420fc;
+  color: #0077FF;
 }
 
 .about_project {
@@ -602,7 +602,7 @@ input[type="range"]:active::-moz-range-progress {
 
 .how_to_connect span,
 .how_to_connect a {
-  color: #2420fc;
+  color: #0077FF;
 }
 .how_to_connect_title {
   display: flex;
@@ -663,7 +663,7 @@ input[type="range"]:active::-moz-range-progress {
 }
 
 .roadmap {
-  background: var(--Accent, #2420fc);
+  background: var(--Accent, #0077FF);
   position: relative;
   overflow: hidden;
 }
@@ -796,7 +796,7 @@ input[type="range"]:active::-moz-range-progress {
 
 .questions {
   border-top: 1px solid rgba(255, 255, 255, 0.2);
-  background: var(--Accent, #2420fc);
+  background: var(--Accent, #0077FF);
 }
 
 .questions_block {
@@ -846,7 +846,7 @@ input[type="range"]:active::-moz-range-progress {
 
 footer {
   border-top: 1px solid rgba(255, 255, 255, 0.2);
-  background: var(--Accent, #2420fc);
+  background: var(--Accent, #0077FF);
   display: flex;
   flex-direction: column;
   align-items: center;

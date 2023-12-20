@@ -38,7 +38,7 @@
 }
 
 .top_menu_item p {
-  color: #2420fc;
+  color: #0077FF;
   font-family: TTInterfaces600;
 }
 .main_menu_item p {
@@ -132,7 +132,7 @@
 .right_content_links li,
 .link_menu_item,
 .link_menu_item p {
-  color: #2420fc !important;
+  color: #0077FF !important;
   font-family: TTInterfaces500;
   font-size: 17px;
   font-style: normal;
@@ -141,7 +141,7 @@
 }
 
 .active_menu_paper p {
-  color: #2420fc !important;
+  color: #0077FF !important;
   font-family: TTInterfaces600;
 }
 

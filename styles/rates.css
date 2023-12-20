@@ -63,7 +63,7 @@
   border-top: 8px solid #fcd920;
 }
 .rates_card:nth-child(4) {
-  border-top: 8px solid var(--Accent, #2420fc);
+  border-top: 8px solid var(--Accent, #0077FF);
 }
 .rates_card_title h3,
 .rates_card_cost h3 {
